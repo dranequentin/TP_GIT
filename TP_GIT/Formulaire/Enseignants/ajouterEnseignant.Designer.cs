@@ -1,7 +1,7 @@
 ﻿
 namespace TP_GIT.Formulaire.Enseignants
 {
-    partial class AjouterEnseignant
+    partial class ajouterEnseignant
     {
         /// <summary>
         /// Required designer variable.

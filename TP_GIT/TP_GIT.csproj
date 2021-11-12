@@ -96,11 +96,101 @@
     <Compile Include="Entity\Matiere.cs" />
     <Compile Include="Entity\MatiereAttribuer.cs" />
     <Compile Include="Entity\Salle.cs" />
-    <Compile Include="Form\Accueil.cs">
+    <Compile Include="Formulaire\accueil.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\Accueil.Designer.cs">
-      <DependentUpon>Accueil.cs</DependentUpon>
+    <Compile Include="Formulaire\accueil.Designer.cs">
+      <DependentUpon>accueil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulaire\Classes\ajouterClasse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaire\Classes\ajouterClasse.Designer.cs">
+      <DependentUpon>ajouterClasse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulaire\Classes\gestionClasses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaire\Classes\gestionClasses.Designer.cs">
+      <DependentUpon>gestionClasses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulaire\Classes\listeEleves.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaire\Classes\listeEleves.Designer.cs">
+      <DependentUpon>listeEleves.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulaire\Cours\ajouterCours.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaire\Cours\ajouterCours.Designer.cs">
+      <DependentUpon>ajouterCours.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulaire\Cours\gestionCours.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaire\Cours\gestionCours.Designer.cs">
+      <DependentUpon>gestionCours.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulaire\Enseignants\ajouterEnseignant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaire\Enseignants\ajouterEnseignant.Designer.cs">
+      <DependentUpon>ajouterEnseignant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulaire\Enseignants\attribuerMatiere.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaire\Enseignants\attribuerMatiere.Designer.cs">
+      <DependentUpon>attribuerMatiere.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulaire\Enseignants\gestionEnseignants.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaire\Enseignants\gestionEnseignants.Designer.cs">
+      <DependentUpon>gestionEnseignants.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulaire\Inscrits\ajouterInscrit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaire\Inscrits\ajouterInscrit.Designer.cs">
+      <DependentUpon>ajouterInscrit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulaire\Inscrits\attribuerClasse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaire\Inscrits\attribuerClasse.Designer.cs">
+      <DependentUpon>attribuerClasse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulaire\Inscrits\gestionInscrits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaire\Inscrits\gestionInscrits.Designer.cs">
+      <DependentUpon>gestionInscrits.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulaire\Matieres\ajouterMatiere.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaire\Matieres\ajouterMatiere.Designer.cs">
+      <DependentUpon>ajouterMatiere.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulaire\Matieres\gestionMatieres.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaire\Matieres\gestionMatieres.Designer.cs">
+      <DependentUpon>gestionMatieres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulaire\Salles\ajouterSalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaire\Salles\ajouterSalle.Designer.cs">
+      <DependentUpon>ajouterSalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulaire\Salles\gestionSalles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaire\Salles\gestionSalles.Designer.cs">
+      <DependentUpon>gestionSalles.cs</DependentUpon>
     </Compile>
     <Compile Include="Manager\ClasseManager.cs" />
     <Compile Include="Manager\CoursManager.cs" />
@@ -111,8 +201,8 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utilities\BddUtilities.cs" />
-    <EmbeddedResource Include="Form\Accueil.resx">
-      <DependentUpon>Accueil.cs</DependentUpon>
+    <EmbeddedResource Include="Formulaire\accueil.resx">
+      <DependentUpon>accueil.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

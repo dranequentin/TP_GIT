@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace TP_GIT
+namespace TP_GIT.Formulaire.Cours
 {
-    public partial class Form1 : Form
+    public partial class ajouterCours : Form
     {
-        public Form1()
+        public ajouterCours()
         {
             InitializeComponent();
         }

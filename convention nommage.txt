@@ -1,8 +1,0 @@
-button → btn_
-DataGridView → dgv_
-label → lbl_
-textbox → txt_
-combobox → cbb_
-
-classe et manager → maj première lettre
-formulaire → tout minuscule

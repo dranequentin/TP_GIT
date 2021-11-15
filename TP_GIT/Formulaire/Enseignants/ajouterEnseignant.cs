@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TP_GIT.Formulaire.Enseignants
 {
-    public partial class AjouterEnseignant : Form
+    public partial class ajouterEnseignant : Form
     {
-        public AjouterEnseignant()
+        public ajouterEnseignant()
         {
             InitializeComponent();
         }

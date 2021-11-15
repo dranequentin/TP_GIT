@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TP_GIT.Formulaire;
 
 namespace TP_GIT
 {
@@ -16,7 +17,7 @@ namespace TP_GIT
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Accueil());
+            Application.Run(new accueil());
         }
     }
 }

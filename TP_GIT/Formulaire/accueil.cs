@@ -16,5 +16,47 @@ namespace TP_GIT.Formulaire
         {
             InitializeComponent();
         }
+
+        private void btn_gestionSalles_Click(object sender, EventArgs e)
+        {
+            Salles.gestionSalles pageSalles = new Salles.gestionSalles();
+            pageSalles.Show();
+            this.Hide();
+        }
+
+        private void btn_gestionInscription_Click(object sender, EventArgs e)
+        {
+            Inscrits.gestionInscrits pageInscrits = new Inscrits.gestionInscrits();
+            pageInscrits.Show();
+            this.Hide();
+        }
+
+        private void btn_gestionEnseignants_Click(object sender, EventArgs e)
+        {
+            Enseignants.gestionEnseignants pageEnseignants = new Enseignants.gestionEnseignants();
+            pageEnseignants.Show();
+            this.Hide();
+        }
+
+        private void btn_gestionMatieres_Click(object sender, EventArgs e)
+        {
+            Matieres.gestionMatieres pageMatieres = new Matieres.gestionMatieres();
+            pageMatieres.Show();
+            this.Hide();
+        }
+
+        private void btn_gestionClasses_Click(object sender, EventArgs e)
+        {
+            Classes.gestionClasses pageClasses = new Classes.gestionClasses();
+            pageClasses.Show();
+            this.Hide();
+        }
+
+        private void btn_gestionCours_Click(object sender, EventArgs e)
+        {
+            Cours.gestionCours pageCours = new Cours.gestionCours();
+            pageCours.Show();
+            this.Hide();
+        }
     }
 }

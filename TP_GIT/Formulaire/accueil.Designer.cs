@@ -57,6 +57,7 @@ namespace TP_GIT.Formulaire
             this.btn_gestionInscription.TabIndex = 1;
             this.btn_gestionInscription.Text = "Gestion Inscriptions";
             this.btn_gestionInscription.UseVisualStyleBackColor = true;
+            this.btn_gestionInscription.Click += new System.EventHandler(this.btn_gestionInscription_Click);
             // 
             // btn_gestionEnseignants
             // 
@@ -66,6 +67,7 @@ namespace TP_GIT.Formulaire
             this.btn_gestionEnseignants.TabIndex = 2;
             this.btn_gestionEnseignants.Text = "Gestion Enseignants";
             this.btn_gestionEnseignants.UseVisualStyleBackColor = true;
+            this.btn_gestionEnseignants.Click += new System.EventHandler(this.btn_gestionEnseignants_Click);
             // 
             // btn_gestionClasses
             // 
@@ -75,6 +77,7 @@ namespace TP_GIT.Formulaire
             this.btn_gestionClasses.TabIndex = 3;
             this.btn_gestionClasses.Text = "Gestion Classes";
             this.btn_gestionClasses.UseVisualStyleBackColor = true;
+            this.btn_gestionClasses.Click += new System.EventHandler(this.btn_gestionClasses_Click);
             // 
             // btn_gestionCours
             // 
@@ -84,6 +87,7 @@ namespace TP_GIT.Formulaire
             this.btn_gestionCours.TabIndex = 6;
             this.btn_gestionCours.Text = "Gestion Cours";
             this.btn_gestionCours.UseVisualStyleBackColor = true;
+            this.btn_gestionCours.Click += new System.EventHandler(this.btn_gestionCours_Click);
             // 
             // btn_gestionMatieres
             // 
@@ -93,6 +97,7 @@ namespace TP_GIT.Formulaire
             this.btn_gestionMatieres.TabIndex = 5;
             this.btn_gestionMatieres.Text = "Gestion Matières";
             this.btn_gestionMatieres.UseVisualStyleBackColor = true;
+            this.btn_gestionMatieres.Click += new System.EventHandler(this.btn_gestionMatieres_Click);
             // 
             // btn_gestionSalles
             // 
@@ -102,6 +107,7 @@ namespace TP_GIT.Formulaire
             this.btn_gestionSalles.TabIndex = 4;
             this.btn_gestionSalles.Text = "Gestion Salles";
             this.btn_gestionSalles.UseVisualStyleBackColor = true;
+            this.btn_gestionSalles.Click += new System.EventHandler(this.btn_gestionSalles_Click);
             // 
             // accueil
             // 
@@ -119,7 +125,7 @@ namespace TP_GIT.Formulaire
             this.Controls.Add(this.lbl_accueil);
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "accueil";
             this.Text = "Accueil";
             this.ResumeLayout(false);

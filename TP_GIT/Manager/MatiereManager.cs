@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +9,11 @@ namespace TP_GIT.Manager
 {
     class MatiereManager
     {
+        MySqlConnection connexion;
+        public MatiereManager()
+        {
+            connexion = Utilities.BddUtilities.Connexion();
+
+        }
     }
 }

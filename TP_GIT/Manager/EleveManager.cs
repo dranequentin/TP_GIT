@@ -13,7 +13,7 @@ namespace TP_GIT.Manager
         public EleveManager()
         {
             connexion = Utilities.BddUtilities.Connexion();
-
         }
+
     }
 }

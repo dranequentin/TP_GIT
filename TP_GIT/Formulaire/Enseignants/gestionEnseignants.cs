@@ -16,5 +16,12 @@ namespace TP_GIT.Formulaire.Enseignants
         {
             InitializeComponent();
         }
+
+        private void btn_ajouterEnseignant_Click(object sender, EventArgs e)
+        {
+            Enseignants.ajouterEnseignant ajouterEnseignants = new Enseignants.ajouterEnseignant();
+            ajouterEnseignants.Show();
+
+        }
     }
 }

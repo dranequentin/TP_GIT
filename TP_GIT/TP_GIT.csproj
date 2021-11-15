@@ -204,6 +204,12 @@
     <EmbeddedResource Include="Formulaire\accueil.resx">
       <DependentUpon>accueil.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formulaire\Enseignants\ajouterEnseignant.resx">
+      <DependentUpon>ajouterEnseignant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulaire\Enseignants\gestionEnseignants.resx">
+      <DependentUpon>gestionEnseignants.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

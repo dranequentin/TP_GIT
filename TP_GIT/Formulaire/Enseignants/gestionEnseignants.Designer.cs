@@ -29,12 +29,33 @@ namespace TP_GIT.Formulaire.Enseignants
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.btn_ajouterEnseignant = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // btn_ajouterEnseignant
+            // 
+            this.btn_ajouterEnseignant.Location = new System.Drawing.Point(199, 234);
+            this.btn_ajouterEnseignant.Name = "btn_ajouterEnseignant";
+            this.btn_ajouterEnseignant.Size = new System.Drawing.Size(153, 38);
+            this.btn_ajouterEnseignant.TabIndex = 0;
+            this.btn_ajouterEnseignant.Text = "Ajouter un enseignant";
+            this.btn_ajouterEnseignant.UseVisualStyleBackColor = true;
+            this.btn_ajouterEnseignant.Click += new System.EventHandler(this.btn_ajouterEnseignant_Click);
+            // 
+            // gestionEnseignants
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(624, 450);
+            this.Controls.Add(this.btn_ajouterEnseignant);
+            this.Name = "gestionEnseignants";
             this.Text = "gestionEnseignants";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btn_ajouterEnseignant;
     }
 }

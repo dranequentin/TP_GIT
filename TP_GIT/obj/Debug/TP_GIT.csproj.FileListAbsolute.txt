@@ -28,6 +28,7 @@ E:\2eme_annee\Blamoutier\C#\TP_GIT\TP_GIT\TP_GIT\bin\Debug\System.Buffers.xml
 E:\2eme_annee\Blamoutier\C#\TP_GIT\TP_GIT\TP_GIT\bin\Debug\System.Memory.xml
 E:\2eme_annee\Blamoutier\C#\TP_GIT\TP_GIT\TP_GIT\bin\Debug\System.Numerics.Vectors.xml
 E:\2eme_annee\Blamoutier\C#\TP_GIT\TP_GIT\TP_GIT\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-E:\2eme_annee\Blamoutier\C#\TP_GIT\TP_GIT\TP_GIT\obj\Debug\TP_GIT.csproj.CopyComplete
 E:\2eme_annee\Blamoutier\C#\TP_GIT\TP_GIT\TP_GIT\obj\Debug\TP_GIT.exe
 E:\2eme_annee\Blamoutier\C#\TP_GIT\TP_GIT\TP_GIT\obj\Debug\TP_GIT.pdb
+E:\2eme_annee\Blamoutier\C#\TP_GIT\TP_GIT\TP_GIT\obj\Debug\TP_GIT.Formulaire.Enseignants.ajouterEnseignant.resources
+E:\2eme_annee\Blamoutier\C#\TP_GIT\TP_GIT\TP_GIT\obj\Debug\TP_GIT.Formulaire.Enseignants.gestionEnseignants.resources

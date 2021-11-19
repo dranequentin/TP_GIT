@@ -17,7 +17,7 @@ namespace TP_GIT.Formulaire.Enseignants
             InitializeComponent();
         }
 
-        private void btn_addEmploye_Click(object sender, EventArgs e)
+        private void btn_addEnseignant_Click(object sender, EventArgs e)
         {
             string nom = txt_nomEnseignant.Text;
             string prenom = txt_prenomEnseignant.Text;
@@ -28,7 +28,7 @@ namespace TP_GIT.Formulaire.Enseignants
             string tel = txt_tel.Text;
             string email = txt_email.Text;
             Manager.EnseignantManager em = new Manager.EnseignantManager();
-            if (em.InsertEnseignant(nom, prenom, dateEmbauche, ville, cp, rue, tel, email))
+            if (em.InsertEnseignant(nom, prenom, ville, cp, rue, tel, email, dateEmbauche))
             {
                 MessageBox.Show("Ajout réussie");
             }

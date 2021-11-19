@@ -144,6 +144,12 @@
     <Compile Include="Formulaire\Enseignants\attribuerMatiere.Designer.cs">
       <DependentUpon>attribuerMatiere.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formulaire\Enseignants\ficheEnseignant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaire\Enseignants\ficheEnseignant.Designer.cs">
+      <DependentUpon>ficheEnseignant.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formulaire\Enseignants\gestionEnseignants.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -206,6 +212,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formulaire\Enseignants\ajouterEnseignant.resx">
       <DependentUpon>ajouterEnseignant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulaire\Enseignants\ficheEnseignant.resx">
+      <DependentUpon>ficheEnseignant.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formulaire\Enseignants\gestionEnseignants.resx">
       <DependentUpon>gestionEnseignants.cs</DependentUpon>

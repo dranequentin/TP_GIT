@@ -32,3 +32,4 @@ E:\2eme_annee\Blamoutier\C#\TP_GIT\TP_GIT\TP_GIT\obj\Debug\TP_GIT.exe
 E:\2eme_annee\Blamoutier\C#\TP_GIT\TP_GIT\TP_GIT\obj\Debug\TP_GIT.pdb
 E:\2eme_annee\Blamoutier\C#\TP_GIT\TP_GIT\TP_GIT\obj\Debug\TP_GIT.Formulaire.Enseignants.ajouterEnseignant.resources
 E:\2eme_annee\Blamoutier\C#\TP_GIT\TP_GIT\TP_GIT\obj\Debug\TP_GIT.Formulaire.Enseignants.gestionEnseignants.resources
+E:\2eme_annee\Blamoutier\C#\TP_GIT\TP_GIT\TP_GIT\obj\Debug\TP_GIT.Formulaire.Enseignants.ficheEnseignant.resources

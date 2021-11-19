@@ -29,7 +29,7 @@ namespace TP_GIT.Formulaire.Enseignants
         /// </summary>
         private void InitializeComponent()
         {
-            this.btn_addEmploye = new System.Windows.Forms.Button();
+            this.btn_addEnseignant = new System.Windows.Forms.Button();
             this.date_embauche = new System.Windows.Forms.DateTimePicker();
             this.lbl_dateEmbauche = new System.Windows.Forms.Label();
             this.txt_rue = new System.Windows.Forms.TextBox();
@@ -49,15 +49,15 @@ namespace TP_GIT.Formulaire.Enseignants
             this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // btn_addEmploye
+            // btn_addEnseignant
             // 
-            this.btn_addEmploye.Location = new System.Drawing.Point(166, 371);
-            this.btn_addEmploye.Name = "btn_addEmploye";
-            this.btn_addEmploye.Size = new System.Drawing.Size(139, 23);
-            this.btn_addEmploye.TabIndex = 44;
-            this.btn_addEmploye.Text = "Ajouter l\'employé";
-            this.btn_addEmploye.UseVisualStyleBackColor = true;
-            this.btn_addEmploye.Click += new System.EventHandler(this.btn_addEmploye_Click);
+            this.btn_addEnseignant.Location = new System.Drawing.Point(166, 371);
+            this.btn_addEnseignant.Name = "btn_addEnseignant";
+            this.btn_addEnseignant.Size = new System.Drawing.Size(139, 23);
+            this.btn_addEnseignant.TabIndex = 44;
+            this.btn_addEnseignant.Text = "Ajouter l\'employé";
+            this.btn_addEnseignant.UseVisualStyleBackColor = true;
+            this.btn_addEnseignant.Click += new System.EventHandler(this.btn_addEnseignant_Click);
             // 
             // date_embauche
             // 
@@ -204,7 +204,7 @@ namespace TP_GIT.Formulaire.Enseignants
             this.ClientSize = new System.Drawing.Size(486, 426);
             this.Controls.Add(this.txt_email);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.btn_addEmploye);
+            this.Controls.Add(this.btn_addEnseignant);
             this.Controls.Add(this.date_embauche);
             this.Controls.Add(this.lbl_dateEmbauche);
             this.Controls.Add(this.txt_rue);
@@ -229,7 +229,7 @@ namespace TP_GIT.Formulaire.Enseignants
 
         #endregion
 
-        private System.Windows.Forms.Button btn_addEmploye;
+        private System.Windows.Forms.Button btn_addEnseignant;
         private System.Windows.Forms.DateTimePicker date_embauche;
         private System.Windows.Forms.Label lbl_dateEmbauche;
         private System.Windows.Forms.TextBox txt_rue;

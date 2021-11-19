@@ -16,5 +16,28 @@ namespace TP_GIT.Formulaire.Classes
         {
             InitializeComponent();
         }
+
+        private void btn_ajouterClasse_Click(object sender, EventArgs e)
+        {
+            Manager.ClasseManager classeManager = new Manager.ClasseManager();
+            bool result = classeManager.InsertClasse(txt_Classe.Text);
+            string titre = "Résultat";
+            if (result)
+            {
+                MessageBox.Show("La classe a bien été ajouté.", titre);
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Échec de l'ajout de la classe.", titre);
+            }
+        }
+
+        private void btn_annuler_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+
     }
 }

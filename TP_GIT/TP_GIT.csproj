@@ -168,6 +168,12 @@
     <Compile Include="Formulaire\Inscrits\attribuerClasse.Designer.cs">
       <DependentUpon>attribuerClasse.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formulaire\Inscrits\ficheEleve.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaire\Inscrits\ficheEleve.Designer.cs">
+      <DependentUpon>ficheEleve.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formulaire\Inscrits\gestionInscrits.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -230,6 +236,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formulaire\Inscrits\ajouterInscrit.resx">
       <DependentUpon>ajouterInscrit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulaire\Inscrits\attribuerClasse.resx">
+      <DependentUpon>attribuerClasse.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formulaire\Inscrits\gestionInscrits.resx">
       <DependentUpon>gestionInscrits.cs</DependentUpon>

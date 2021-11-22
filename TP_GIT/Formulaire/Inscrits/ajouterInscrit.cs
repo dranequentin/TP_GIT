@@ -27,8 +27,8 @@ namespace TP_GIT.Formulaire.Inscrits
             string rue = txt_rue.Text;
             string tel = txt_tel.Text;
             string email = txt_email.Text;
-            Manager.EnseignantManager em = new Manager.EnseignantManager();
-            if (em.InsertEnseignant(nom, prenom, ville, cp, rue, tel, email, dateValidation))
+            Manager.EleveManager eleveManager = new Manager.EleveManager();
+            if (eleveManager.InsertEleve(nom, prenom, ville, cp, rue, tel, email, dateValidation))
             {
                 MessageBox.Show("Ajout réussie");
             }

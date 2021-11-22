@@ -10,8 +10,11 @@ using System.Windows.Forms;
 
 namespace TP_GIT.Formulaire.Enseignants
 {
+
     public partial class ficheEnseignant : Form
     {
+        Entity.Enseignant enseignants { get; set; }
+
         private int idEnseignant;
         public int IdEnseignant { get => idEnseignant; set => idEnseignant = value; }
         public ficheEnseignant(Entity.Enseignant enseignants)
@@ -43,10 +46,12 @@ namespace TP_GIT.Formulaire.Enseignants
                 MessageBox.Show("Une erreure est survenue");
             }
         }
-
         private void btn_update_Click(object sender, EventArgs e)
         {
-
+            Manager.EnseignantManager em = new Manager.EnseignantManager();
+            enseignants = em.ReadEnseignantById(idEnseignant);
+            Enseignants.updateEnseignant updateEnseignant = new Enseignants.updateEnseignant(enseignants);
+            updateEnseignant.Show();
         }
     }
 }

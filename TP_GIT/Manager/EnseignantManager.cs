@@ -137,5 +137,38 @@ namespace TP_GIT.Manager
                 return false;
             }
         }
+        public bool updateEnseignant(int idEnseignant, string ville ,string cp, string rue, string tel,string email)
+        {
+            connexion.Open();
+            string requeteSelect = "UPDATE enseignant set ville = @ville, cp = @cp, rue = @rue, tel = @tel, email = @email" +
+                "where idEnseignant =@idEnseignant";
+            MySqlCommand commandeSql = new MySqlCommand(requeteSelect, connexion);
+            commandeSql.Parameters.AddWithValue("@ville", ville);
+            commandeSql.Parameters.AddWithValue("@cp", cp);
+            commandeSql.Parameters.AddWithValue("@rue", rue);
+            commandeSql.Parameters.AddWithValue("@tel", tel);
+            commandeSql.Parameters.AddWithValue("@email", email);
+            try
+            {
+                int Stop = commandeSql.ExecuteNonQuery();
+                if (Stop == 0)
+                {
+                    return false;
+                }
+                Utilities.BddUtilities.fermerConnexion(connexion);
+                return true;
+
+            }
+            catch (Exception e)
+            {
+                Console.BackgroundColor = ConsoleColor.Red;
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.WriteLine("Exception attrapée");
+                Console.WriteLine(e.Message);
+                Console.ResetColor();
+                Utilities.BddUtilities.fermerConnexion(connexion);
+                return false;
+            }
+        }
     }
 }

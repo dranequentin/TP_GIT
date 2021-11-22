@@ -53,7 +53,7 @@ namespace TP_GIT.Formulaire.Enseignants
             // btn_delete
             // 
             this.btn_delete.Location = new System.Drawing.Point(293, 516);
-            this.btn_delete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_delete.Margin = new System.Windows.Forms.Padding(4);
             this.btn_delete.Name = "btn_delete";
             this.btn_delete.Size = new System.Drawing.Size(129, 46);
             this.btn_delete.TabIndex = 21;
@@ -64,7 +64,7 @@ namespace TP_GIT.Formulaire.Enseignants
             // btn_update
             // 
             this.btn_update.Location = new System.Drawing.Point(75, 516);
-            this.btn_update.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_update.Margin = new System.Windows.Forms.Padding(4);
             this.btn_update.Name = "btn_update";
             this.btn_update.Size = new System.Drawing.Size(129, 46);
             this.btn_update.TabIndex = 20;
@@ -284,7 +284,7 @@ namespace TP_GIT.Formulaire.Enseignants
             this.Controls.Add(this.lbl_nom);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ficheEnseignant";
             this.Text = "ficheEnseignant";
             this.ResumeLayout(false);

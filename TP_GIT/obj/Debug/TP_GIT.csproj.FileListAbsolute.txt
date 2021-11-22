@@ -74,3 +74,7 @@ C:\Users\c1e16\Documents\GitHub\TP_GIT\TP_GIT\obj\Debug\TP_GIT.Formulaire.Classe
 C:\Users\c1e16\Documents\GitHub\TP_GIT\TP_GIT\obj\Debug\TP_GIT.Formulaire.Classes.ajouterClasse.resources
 C:\Users\c1e16\Documents\GitHub\TP_GIT\TP_GIT\obj\Debug\TP_GIT.Formulaire.Classes.listeEleves.resources
 >>>>>>> 50e61f5744c3ddc5590ce54221ea64b3bca9f31b
+E:\2eme_annee\Blamoutier\C#\TP_GIT\TP_GIT\TP_GIT\obj\Debug\TP_GIT.Formulaire.Classes.ajouterClasse.resources
+E:\2eme_annee\Blamoutier\C#\TP_GIT\TP_GIT\TP_GIT\obj\Debug\TP_GIT.Formulaire.Classes.gestionClasses.resources
+E:\2eme_annee\Blamoutier\C#\TP_GIT\TP_GIT\TP_GIT\obj\Debug\TP_GIT.Formulaire.Classes.listeEleves.resources
+E:\2eme_annee\Blamoutier\C#\TP_GIT\TP_GIT\TP_GIT\obj\Debug\TP_GIT.Formulaire.Enseignants.updateEnseignant.resources

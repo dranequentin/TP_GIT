@@ -16,5 +16,26 @@ namespace TP_GIT.Formulaire.Inscrits
         {
             InitializeComponent();
         }
+
+        private void btn_addEleve_Click(object sender, EventArgs e)
+        {
+            string nom = txt_nomEleve.Text;
+            string prenom = txt_prenomEleve.Text;
+            DateTime dateValidation = date_validation.Value.Date;
+            string ville = txt_ville.Text;
+            string cp = txt_cp.Text;
+            string rue = txt_rue.Text;
+            string tel = txt_tel.Text;
+            string email = txt_email.Text;
+            Manager.EnseignantManager em = new Manager.EnseignantManager();
+            if (em.InsertEnseignant(nom, prenom, ville, cp, rue, tel, email, dateValidation))
+            {
+                MessageBox.Show("Ajout réussie");
+            }
+            else
+            {
+                MessageBox.Show("Une erreure est survenue");
+            }
+        }
     }
 }

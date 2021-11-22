@@ -11,6 +11,7 @@ namespace TP_GIT.Entity
         private int idEleve;
         private string nom, prenom, cp, ville, rue, tel, email;
         private DateTime dateValidation, dateFinEtude;
+        private Classe maClasse;
 
         public int IdEleve { get => idEleve; set => idEleve = value; }
         public string Nom { get => nom; set => nom = value; }
@@ -22,5 +23,6 @@ namespace TP_GIT.Entity
         public string Email { get => email; set => email = value; }
         public DateTime DateValidation { get => dateValidation; set => dateValidation = value; }
         public DateTime DateFinEtude { get => dateFinEtude; set => dateFinEtude = value; }
+        public Classe MaClasse { get => maClasse; set => maClasse = value; }
     }
 }

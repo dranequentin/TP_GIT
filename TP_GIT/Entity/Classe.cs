@@ -13,5 +13,10 @@ namespace TP_GIT.Entity
 
         public int IdClasse { get => idClasse; set => idClasse = value; }
         public string NomClasse { get => nomClasse; set => nomClasse = value; }
+
+        public override string ToString()
+        {
+            return NomClasse;
+        }
     }
 }

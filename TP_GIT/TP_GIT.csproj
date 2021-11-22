@@ -210,6 +210,15 @@
     <EmbeddedResource Include="Formulaire\accueil.resx">
       <DependentUpon>accueil.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formulaire\Classes\ajouterClasse.resx">
+      <DependentUpon>ajouterClasse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulaire\Classes\gestionClasses.resx">
+      <DependentUpon>gestionClasses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulaire\Classes\listeEleves.resx">
+      <DependentUpon>listeEleves.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formulaire\Enseignants\ajouterEnseignant.resx">
       <DependentUpon>ajouterEnseignant.cs</DependentUpon>
     </EmbeddedResource>

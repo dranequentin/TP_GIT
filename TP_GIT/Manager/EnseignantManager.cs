@@ -137,17 +137,21 @@ namespace TP_GIT.Manager
                 return false;
             }
         }
-        public bool updateEnseignant(int idEnseignant, string ville ,string cp, string rue, string tel,string email)
+        public bool updateEnseignant(int idEnseignant,string nom, string prenom, string ville ,string cp, string rue, string tel,string email)
         {
             connexion.Open();
-            string requeteSelect = "UPDATE enseignant set ville = @ville, cp = @cp, rue = @rue, tel = @tel, email = @email" +
+            string requeteSelect = "UPDATE enseignant set nom = @nom, prenom = @prenom, " +
+                "ville = @ville, cp = @cp, rue = @rue, tel = @tel, email = @email " +
                 "where idEnseignant =@idEnseignant";
             MySqlCommand commandeSql = new MySqlCommand(requeteSelect, connexion);
+            commandeSql.Parameters.AddWithValue("@nom", nom);
+            commandeSql.Parameters.AddWithValue("@prenom", prenom);
             commandeSql.Parameters.AddWithValue("@ville", ville);
             commandeSql.Parameters.AddWithValue("@cp", cp);
             commandeSql.Parameters.AddWithValue("@rue", rue);
             commandeSql.Parameters.AddWithValue("@tel", tel);
             commandeSql.Parameters.AddWithValue("@email", email);
+            commandeSql.Parameters.AddWithValue("@idEnseignant", idEnseignant);
             try
             {
                 int Stop = commandeSql.ExecuteNonQuery();

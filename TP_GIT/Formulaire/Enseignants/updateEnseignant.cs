@@ -31,15 +31,17 @@ namespace TP_GIT.Formulaire.Enseignants
 
         private void btn_updateEnseignant_Click(object sender, EventArgs e)
         {
+            string nom = txt_nomEnseignant.Text;
+            string prenom = txt_prenomEnseignant.Text;
             string ville = txt_ville.Text;
             string cp = txt_cp.Text;
             string rue = txt_rue.Text;
             string tel = txt_tel.Text;
             string email = txt_email.Text;
             Manager.EnseignantManager em = new Manager.EnseignantManager();
-            if (em.updateEnseignant(idEnseignant,ville, cp, rue, tel, email))
+            if (em.updateEnseignant(idEnseignant,nom,prenom,ville, cp, rue, tel, email))
             {
-                MessageBox.Show("Ajout réussie");
+                MessageBox.Show("Modification réussie");
             }
             else
             {

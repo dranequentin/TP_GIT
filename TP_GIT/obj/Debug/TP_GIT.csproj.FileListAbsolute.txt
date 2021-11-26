@@ -84,3 +84,4 @@ C:\Users\c1e16\Documents\GitHub\TP_GIT\TP_GIT\obj\Debug\TP_GIT.Formulaire.Inscri
 >>>>>>> da85524787e77b5e89b88c328e35f9b52ea5d1bd
 E:\2eme_annee\Blamoutier\C#\TP_GIT\TP_GIT\TP_GIT\obj\Debug\TP_GIT.Formulaire.Inscrits.ajouterInscrit.resources
 E:\2eme_annee\Blamoutier\C#\TP_GIT\TP_GIT\TP_GIT\obj\Debug\TP_GIT.Formulaire.Inscrits.gestionInscrits.resources
+E:\2eme_annee\Blamoutier\C#\TP_GIT\TP_GIT\TP_GIT\obj\Debug\TP_GIT.Formulaire.Enseignants.attribuerMatiere.resources

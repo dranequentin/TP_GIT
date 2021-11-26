@@ -228,6 +228,9 @@
     <EmbeddedResource Include="Formulaire\Enseignants\ajouterEnseignant.resx">
       <DependentUpon>ajouterEnseignant.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formulaire\Enseignants\attribuerMatiere.resx">
+      <DependentUpon>attribuerMatiere.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formulaire\Enseignants\ficheEnseignant.resx">
       <DependentUpon>ficheEnseignant.cs</DependentUpon>
     </EmbeddedResource>

@@ -46,8 +46,8 @@ namespace TP_GIT.Manager
         {
             connexion.Open();
             string requeteSelect = "insert into eleve (nom,prenom,ville," +
-                "cp,rue,tel,email,dateValidation,dateFinEtude,idClasse) VALUES (@nom,@prenom,@ville,@cp," +
-                "@rue,@tel,@email,@dateValidation,NULL,@idClasse)";
+                "cp,rue,tel,email,dateValidation,dateFinEtude) VALUES (@nom,@prenom,@ville,@cp," +
+                "@rue,@tel,@email,@dateValidation,NULL)";
             MySqlCommand commandeSql = new MySqlCommand(requeteSelect, connexion);
             commandeSql.Parameters.AddWithValue("@nom", nom);
             commandeSql.Parameters.AddWithValue("@prenom", prenom);
@@ -56,7 +56,7 @@ namespace TP_GIT.Manager
             commandeSql.Parameters.AddWithValue("@rue", rue);
             commandeSql.Parameters.AddWithValue("@tel", tel);
             commandeSql.Parameters.AddWithValue("@email", email);
-            commandeSql.Parameters.AddWithValue("@dateEmbauche", dateValidation);
+            commandeSql.Parameters.AddWithValue("@dateValidation", dateValidation);
 
             try
             {
@@ -76,5 +76,30 @@ namespace TP_GIT.Manager
             }
 
         }
+
+        public List<Entity.Eleve> ReadAllStillStudent(MySqlConnection connexion)
+        {
+            List<Entity.Eleve> ListEleves = new List<Entity.Eleve>();
+            MySqlDataReader eleves;
+            string requeteSelect = "Select nom,prenom from eleve WHERE idClasse IS NULL order by nom";
+            MySqlCommand commandeSql = new MySqlCommand(requeteSelect, connexion);
+            eleves = commandeSql.ExecuteReader();
+            if (eleves.HasRows)
+            {
+                while (eleves.Read())
+                {
+                    Entity.Eleve data = new Entity.Eleve();
+                    Entity.Classe classe = new Entity.Classe();
+
+                    data.Nom = eleves.GetString("nom");
+                    data.Prenom = eleves.GetString("prenom");
+
+                    ListEleves.Add(data);
+                }
+                eleves.Close();
+            }
+            return ListEleves;
+        }
+
     }
 }

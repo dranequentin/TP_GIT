@@ -1,7 +1,6 @@
-﻿
-namespace TP_GIT.Formulaire.Inscrits
+﻿namespace TP_GIT.Formulaire.Inscrits
 {
-    partial class attribuerClasse
+    partial class ficheEleve
     {
         /// <summary>
         /// Required designer variable.
@@ -29,17 +28,10 @@ namespace TP_GIT.Formulaire.Inscrits
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // attribuerClasse
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(480, 337);
-            this.Name = "attribuerClasse";
-            this.Text = "attribuerClasse";
-            this.ResumeLayout(false);
-
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Text = "ficheEleve";
         }
 
         #endregion

@@ -37,6 +37,7 @@ namespace TP_GIT.Formulaire.Inscrits
             // 
             // dgv_inscrits
             // 
+            this.dgv_inscrits.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgv_inscrits.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_inscrits.Location = new System.Drawing.Point(12, 12);
             this.dgv_inscrits.Name = "dgv_inscrits";

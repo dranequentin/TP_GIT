@@ -192,11 +192,23 @@
     <Compile Include="Formulaire\Matieres\ajouterMatiere.Designer.cs">
       <DependentUpon>ajouterMatiere.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formulaire\Matieres\attribuerMatiere.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaire\Matieres\attribuerMatiere.Designer.cs">
+      <DependentUpon>attribuerMatiere.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formulaire\Matieres\gestionMatieres.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formulaire\Matieres\gestionMatieres.Designer.cs">
       <DependentUpon>gestionMatieres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulaire\Matieres\listEnseignants.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaire\Matieres\listEnseignants.Designer.cs">
+      <DependentUpon>listEnseignants.cs</DependentUpon>
     </Compile>
     <Compile Include="Formulaire\Salles\ajouterSalle.cs">
       <SubType>Form</SubType>
@@ -254,6 +266,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formulaire\Inscrits\gestionInscrits.resx">
       <DependentUpon>gestionInscrits.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulaire\Matieres\ajouterMatiere.resx">
+      <DependentUpon>ajouterMatiere.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulaire\Matieres\attribuerMatiere.resx">
+      <DependentUpon>attribuerMatiere.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulaire\Matieres\gestionMatieres.resx">
+      <DependentUpon>gestionMatieres.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

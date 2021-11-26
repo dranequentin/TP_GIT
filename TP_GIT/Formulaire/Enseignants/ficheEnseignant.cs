@@ -35,7 +35,7 @@ namespace TP_GIT.Formulaire.Enseignants
         {
             
             Manager.EnseignantManager em = new Manager.EnseignantManager();
-            bool isOk = em.DeleteSite(this.IdEnseignant);
+            bool isOk = em.DeleteEnseignant(this.IdEnseignant);
             if (isOk)
             {
                 MessageBox.Show("Suppression réussie");

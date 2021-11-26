@@ -109,7 +109,7 @@ namespace TP_GIT.Manager
             }
             return data;
         }
-        public bool DeleteSite(int idEnseignant)
+        public bool DeleteEnseignant(int idEnseignant)
         {
             connexion.Open();
             string requeteSelect = "DELETE FROM enseignant where idEnseignant = @idEnseignant ";

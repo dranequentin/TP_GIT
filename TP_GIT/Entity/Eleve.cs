@@ -17,7 +17,7 @@ namespace TP_GIT.Entity
         public string Nom { get => nom; set => nom = value; }
         public string Prenom { get => prenom; set => prenom = value; }
         public string Cp { get => cp; set => cp = value; }
-        public string Vill { get => ville; set => ville = value; }
+        public string Ville { get => ville; set => ville = value; }
         public string Rue { get => rue; set => rue = value; }
         public string Tel { get => tel; set => tel = value; }
         public string Email { get => email; set => email = value; }

@@ -12,9 +12,35 @@ namespace TP_GIT.Formulaire.Salles
 {
     public partial class ajouterSalle : Form
     {
+        
         public ajouterSalle()
         {
             InitializeComponent();
+        }
+
+        private void btn_ajouterSalle_Click(object sender, EventArgs e)
+        {
+            Manager.SallesManager salleManager = new Manager.SallesManager();
+            bool result = salleManager.InsertSalle(txt_salle.Text);
+            string titre = "Résultat";
+            if (result)
+            {
+                MessageBox.Show("La salle a bien été ajouté.", titre);
+                this.Close();
+                gestionSalles gs = new gestionSalles();
+                gs.Show();
+            }
+            else
+            {
+                MessageBox.Show("Échec de l'ajout de la salle.", titre);
+            }
+        }
+
+        private void btn_annuler_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            gestionSalles gs = new gestionSalles();
+            gs.Show();
         }
     }
 }

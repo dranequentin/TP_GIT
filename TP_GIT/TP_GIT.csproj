@@ -138,12 +138,6 @@
     <Compile Include="Formulaire\Enseignants\ajouterEnseignant.Designer.cs">
       <DependentUpon>ajouterEnseignant.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formulaire\Enseignants\attribuerMatiere.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formulaire\Enseignants\attribuerMatiere.Designer.cs">
-      <DependentUpon>attribuerMatiere.cs</DependentUpon>
-    </Compile>
     <Compile Include="Formulaire\Enseignants\ficheEnseignant.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -204,11 +198,11 @@
     <Compile Include="Formulaire\Matieres\gestionMatieres.Designer.cs">
       <DependentUpon>gestionMatieres.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formulaire\Matieres\listEnseignants.cs">
+    <Compile Include="Formulaire\Matieres\updateMatiere.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formulaire\Matieres\listEnseignants.Designer.cs">
-      <DependentUpon>listEnseignants.cs</DependentUpon>
+    <Compile Include="Formulaire\Matieres\updateMatiere.Designer.cs">
+      <DependentUpon>updateMatiere.cs</DependentUpon>
     </Compile>
     <Compile Include="Formulaire\Salles\ajouterSalle.cs">
       <SubType>Form</SubType>
@@ -221,6 +215,12 @@
     </Compile>
     <Compile Include="Formulaire\Salles\gestionSalles.Designer.cs">
       <DependentUpon>gestionSalles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulaire\Salles\updateSalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaire\Salles\updateSalle.Designer.cs">
+      <DependentUpon>updateSalle.cs</DependentUpon>
     </Compile>
     <Compile Include="Manager\ClasseManager.cs" />
     <Compile Include="Manager\CoursManager.cs" />
@@ -245,9 +245,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formulaire\Enseignants\ajouterEnseignant.resx">
       <DependentUpon>ajouterEnseignant.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formulaire\Enseignants\attribuerMatiere.resx">
-      <DependentUpon>attribuerMatiere.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formulaire\Enseignants\ficheEnseignant.resx">
       <DependentUpon>ficheEnseignant.cs</DependentUpon>
@@ -275,6 +272,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formulaire\Matieres\gestionMatieres.resx">
       <DependentUpon>gestionMatieres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulaire\Matieres\updateMatiere.resx">
+      <DependentUpon>updateMatiere.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulaire\Salles\ajouterSalle.resx">
+      <DependentUpon>ajouterSalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulaire\Salles\gestionSalles.resx">
+      <DependentUpon>gestionSalles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulaire\Salles\updateSalle.resx">
+      <DependentUpon>updateSalle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

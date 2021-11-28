@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TP_GIT.Entity
 {
-    class Salle
+    public class Salle
     {
         private int idSalle;
         private string nomSalle;

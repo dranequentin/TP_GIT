@@ -80,5 +80,55 @@ namespace TP_GIT.Manager
                 return false;
             }
         }
+        public Entity.Matiere ReadMatiereById(int idMatiere)
+        {
+            connexion.Open();
+            Entity.Matiere data = new Entity.Matiere();
+            MySqlDataReader matieres;
+            string requeteSelect = "Select * from matiere where idMatiere = @idMatiere";
+            MySqlCommand commandeSql = connexion.CreateCommand();
+            commandeSql.CommandText = requeteSelect;
+            commandeSql.Parameters.AddWithValue("@idMatiere", idMatiere);
+            matieres = commandeSql.ExecuteReader();
+            if (matieres.HasRows)
+            {
+                matieres.Read();
+
+                data.IdMatiere = matieres.GetInt32("idMatiere");
+                data.NomMatiere = matieres.GetString("nomMatiere");
+
+                matieres.Close();
+            }
+            return data;
+        }
+        public bool updateMatiere(int idMatiere, string nomMatiere)
+        {
+            connexion.Open();
+            string requeteSelect = "UPDATE matiere set nomMatiere = @nomMatiere where idMatiere =@idMatiere";
+            MySqlCommand commandeSql = new MySqlCommand(requeteSelect, connexion);
+            commandeSql.Parameters.AddWithValue("@nomMatiere", nomMatiere);
+            commandeSql.Parameters.AddWithValue("@idMatiere", idMatiere);
+            try
+            {
+                int Stop = commandeSql.ExecuteNonQuery();
+                if (Stop == 0)
+                {
+                    return false;
+                }
+                Utilities.BddUtilities.fermerConnexion(connexion);
+                return true;
+
+            }
+            catch (Exception e)
+            {
+                Console.BackgroundColor = ConsoleColor.Red;
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.WriteLine("Exception attrapée");
+                Console.WriteLine(e.Message);
+                Console.ResetColor();
+                Utilities.BddUtilities.fermerConnexion(connexion);
+                return false;
+            }
+        }
     }
 }

@@ -14,7 +14,7 @@ namespace TP_GIT.Formulaire.Matieres
     {
         Entity.Enseignant enseignants { get; set; }
 
-        Entity.Matiere matiere { get; set; }
+        Entity.Matiere matieres { get; set; }
         List<Entity.Matiere> Matieres { get; set; }
         public gestionMatieres()
         {
@@ -39,17 +39,15 @@ namespace TP_GIT.Formulaire.Matieres
 
         private void dgv_matiere_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            /*
+            
             if (e.RowIndex != -1)
             {
                 int idMatiere = int.Parse(dgv_matiere.Rows[e.RowIndex].Cells[0].Value.ToString());
                 Manager.MatiereManager mm = new Manager.MatiereManager();
-                enseignants = mm.ReadEnseignantById(idMatiere);
-                listEnseignants le = new listEnseignants(enseignants);
-                le.Show();
-
+                matieres = mm.ReadMatiereById(idMatiere);
+                updateMatiere um = new updateMatiere(matieres);
+                um.Show();
             }
-            */
         }
 
         private void gestionMatieres_Load(object sender, EventArgs e)

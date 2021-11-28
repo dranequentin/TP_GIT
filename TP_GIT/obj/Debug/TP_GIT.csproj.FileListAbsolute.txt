@@ -89,3 +89,7 @@ E:\2eme_annee\Blamoutier\C#\TP_GIT\TP_GIT\TP_GIT\obj\Debug\TP_GIT.Formulaire.Ins
 E:\2eme_annee\Blamoutier\C#\TP_GIT\TP_GIT\TP_GIT\obj\Debug\TP_GIT.Formulaire.Matieres.ajouterMatiere.resources
 E:\2eme_annee\Blamoutier\C#\TP_GIT\TP_GIT\TP_GIT\obj\Debug\TP_GIT.Formulaire.Matieres.gestionMatieres.resources
 E:\2eme_annee\Blamoutier\C#\TP_GIT\TP_GIT\TP_GIT\obj\Debug\TP_GIT.Formulaire.Matieres.attribuerMatiere.resources
+E:\2eme_annee\Blamoutier\C#\TP_GIT\TP_GIT\TP_GIT\obj\Debug\TP_GIT.Formulaire.Salles.ajouterSalle.resources
+E:\2eme_annee\Blamoutier\C#\TP_GIT\TP_GIT\TP_GIT\obj\Debug\TP_GIT.Formulaire.Salles.gestionSalles.resources
+E:\2eme_annee\Blamoutier\C#\TP_GIT\TP_GIT\TP_GIT\obj\Debug\TP_GIT.Formulaire.Matieres.updateMatiere.resources
+E:\2eme_annee\Blamoutier\C#\TP_GIT\TP_GIT\TP_GIT\obj\Debug\TP_GIT.Formulaire.Salles.updateSalle.resources

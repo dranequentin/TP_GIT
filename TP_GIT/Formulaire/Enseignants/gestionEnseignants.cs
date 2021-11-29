@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace TP_GIT.Formulaire.Enseignants
 {
-    
+    /// <summary>
+    /// Formulaire de gestion des enseignants
+    /// </summary>
     public partial class gestionEnseignants : Form
     {
         Entity.Enseignant enseignants { get; set; }
         List<Entity.Enseignant> ListeEnseignants { get; set; }
+        /// <summary>
+        /// Constructeur du formulaire de la gestion des enseignants contenant la fonction
+        /// permettant de lire tous les enseignants de la base de données
+        /// </summary>
         public gestionEnseignants()
         {
             Manager.EnseignantManager em = new Manager.EnseignantManager();

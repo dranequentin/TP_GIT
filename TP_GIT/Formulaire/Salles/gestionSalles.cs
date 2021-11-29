@@ -10,12 +10,19 @@ using System.Windows.Forms;
 
 namespace TP_GIT.Formulaire.Salles
 {
+    /// <summary>
+    /// Formulaire de gestion des salles de classe
+    /// </summary>
     public partial class gestionSalles : Form
     {
         Entity.Enseignant enseignants { get; set; }
 
         Entity.Salle salle { get; set; }
         List<Entity.Salle> Salles { get; set; }
+        /// <summary>
+        /// Constructeur du formulaire de gestion des salles de classes contenant la fonction permettant
+        /// de récupèrer les informations de toutes les salles de classes de la base de données
+        /// </summary>
         public gestionSalles()
         {
             Manager.SallesManager sallesManager = new Manager.SallesManager();

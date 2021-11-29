@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace TP_GIT.Entity
 {
+    /// <summary>
+    /// Class Eleve représente un élève du lycée 
+    /// </summary>
     class Eleve
     {
         private int idEleve;

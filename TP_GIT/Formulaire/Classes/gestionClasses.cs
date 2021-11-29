@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace TP_GIT.Formulaire.Classes
 {
+    /// <summary>
+    /// Formulaire de la gestion des classes
+    /// </summary>
     public partial class gestionClasses : Form
     {
         Entity.Eleve classe { get; set; }
 
         List<Entity.Classe> Classes { get; set; }
+        /// <summary>
+        /// Constructeur du formulaire de gestion des classes contenant
+        /// une fonction pour lire toutes les classes de la base de données
+        /// </summary>
         public gestionClasses()
         {
             Manager.ClasseManager classeManager = new Manager.ClasseManager();

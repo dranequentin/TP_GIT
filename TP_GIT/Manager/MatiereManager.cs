@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace TP_GIT.Manager
 {
+    /// <summary>
+    /// Manager de l'entité Matiere 
+    /// </summary>
     class MatiereManager
     {
         MySqlConnection connexion;
@@ -15,6 +18,10 @@ namespace TP_GIT.Manager
             connexion = Utilities.BddUtilities.Connexion();
 
         }
+        /// <summary>
+        /// Recupère la liste de toutes les matières
+        /// </summary>
+        /// <returns>List{Entity.Matiere}</returns>
         public List<Entity.Matiere> ReadAllMatiere()
         {
             connexion.Open();
@@ -38,7 +45,11 @@ namespace TP_GIT.Manager
             Utilities.BddUtilities.fermerConnexion(connexion);
             return ListMatiere;
         }
-
+        /// <summary>
+        /// Insertion d'une matiere dans la base de donnée
+        /// </summary>
+        /// <param name="nomMatiere">nom de la matière à ajouter: chaine de caractère</param>
+        /// <returns>Booléen</returns>
         public bool InsertMatiere(string nomMatiere)
         {
             connexion.Open();
@@ -51,6 +62,12 @@ namespace TP_GIT.Manager
             return true;
 
         }
+        /// <summary>
+        /// Attribue une matiere a un enseignant
+        /// </summary>
+        /// <param name="idMatiere">id de la matiere a attribuer: entier</param>
+        /// <param name="idEnseignant">id de l'enseignant a assigner a la matière: chaine de caractère</param>
+        /// <returns>Booléen</returns>
         public bool AttribuerMatiere(int idMatiere, int idEnseignant)
         {
             connexion.Open();
@@ -80,6 +97,11 @@ namespace TP_GIT.Manager
                 return false;
             }
         }
+        /// <summary>
+        /// Lit les informations d'une matière grâce a son id
+        /// </summary>
+        /// <param name="idMatiere">id de la matière rechercher: entier</param>
+        /// <returns>Entity.Matier</returns>
         public Entity.Matiere ReadMatiereById(int idMatiere)
         {
             connexion.Open();
@@ -101,6 +123,12 @@ namespace TP_GIT.Manager
             }
             return data;
         }
+        /// <summary>
+        /// Met à jour le nom de la matière selectionner 
+        /// </summary>
+        /// <param name="idMatiere">id de la matière selectonner: entier</param>
+        /// <param name="nomMatiere">nouveau nom de la matière: chaine de caractère</param>
+        /// <returns>Booléen </returns>
         public bool updateMatiere(int idMatiere, string nomMatiere)
         {
             connexion.Open();

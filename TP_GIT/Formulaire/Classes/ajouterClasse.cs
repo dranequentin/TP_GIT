@@ -10,8 +10,14 @@ using System.Windows.Forms;
 
 namespace TP_GIT.Formulaire.Classes
 {
+    /// <summary>
+    /// Formulaire d'ajout d'une classe
+    /// </summary>
     public partial class ajouterClasse : Form
     {
+        /// <summary>
+        /// Constructeure du formulaire d'ajout de classes
+        /// </summary>
         public ajouterClasse()
         {
             InitializeComponent();

@@ -10,12 +10,19 @@ using System.Windows.Forms;
 
 namespace TP_GIT.Formulaire.Matieres
 {
+    /// <summary>
+    /// Formulaire de gestion des matières
+    /// </summary>
     public partial class gestionMatieres : Form
     {
         Entity.Enseignant enseignants { get; set; }
 
         Entity.Matiere matieres { get; set; }
         List<Entity.Matiere> Matieres { get; set; }
+        /// <summary>
+        /// Constructeur du formulaire de gestion des matières contenant la fonction permettant 
+        /// de récupèrer toutes les informations de toutes les matières
+        /// </summary>
         public gestionMatieres()
         {
             Manager.MatiereManager managerMatiere = new Manager.MatiereManager();

@@ -10,8 +10,14 @@ using System.Windows.Forms;
 
 namespace TP_GIT.Formulaire.Inscrits
 {
+    /// <summary>
+    /// Formulaire de la fiche élève
+    /// </summary>
     public partial class ficheEleve : Form
     {
+        /// <summary>
+        /// Constructeur du formulaire de la fiche élève
+        /// </summary>
         public ficheEleve()
         {
             InitializeComponent();

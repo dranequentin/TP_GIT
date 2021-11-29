@@ -10,13 +10,25 @@ using System.Windows.Forms;
 
 namespace TP_GIT.Formulaire.Enseignants
 {
-
+    /// <summary>
+    /// Formulaire de la fiche enseignant
+    /// </summary>
     public partial class ficheEnseignant : Form
     {
         Entity.Enseignant enseignants { get; set; }
 
         private int idEnseignant;
+        /// <summary>
+        /// Récupère et attribue l'id de l'objet Enseignant passé en paramétre 
+        /// a l'idEnseignant du formulaire de la fiche enseignant
+        /// correspond a la valeur passer dans le constructeur
+        /// </summary>
         public int IdEnseignant { get => idEnseignant; set => idEnseignant = value; }
+        /// <summary>
+        /// Constructeur du formulaire fiche enseignant ayant pour paramétre un objet enseignant
+        /// attribuant les informations de l'objet aux champs de texte du formulaire
+        /// </summary>
+        /// <param name="enseignants">Entity.Enseignant</param>
         public ficheEnseignant(Entity.Enseignant enseignants)
         {
             InitializeComponent();

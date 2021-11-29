@@ -9,13 +9,27 @@ namespace TP_GIT.Manager
 {
     class EnseignantManager
     {
+        /// <summary>
+        /// Manager de la classe Enseignant
+        /// </summary>
         MySqlConnection connexion;
         public EnseignantManager()
         {
             connexion = Utilities.BddUtilities.Connexion();
 
         }
-        //Fonction pour inserer un enseignant dans la base de données en récurerant les informations issu d'un formulaire 
+        /// <summary>
+        /// Insertion d'un enseignant dans la base de données
+        /// </summary>
+        /// <param name="nom"></param>
+        /// <param name="prenom"></param>
+        /// <param name="ville"></param>
+        /// <param name="cp"></param>
+        /// <param name="rue"></param>
+        /// <param name="tel"></param>
+        /// <param name="email"></param>
+        /// <param name="dateEmbauche"></param>
+        /// <returns>Booléen</returns>
         public bool InsertEnseignant(string nom, string prenom, string ville, string cp, string rue,
             string tel, string email, DateTime dateEmbauche)
         {
@@ -51,6 +65,10 @@ namespace TP_GIT.Manager
             }
 
         }
+        /// <summary>
+        /// Récupère tous les enseignants de la base de données
+        /// </summary>
+        /// <returns>List{Entity.Enseignant}</returns>
         public List<Entity.Enseignant> ReadAllEnseignants()
         {
             connexion.Open();
@@ -81,6 +99,11 @@ namespace TP_GIT.Manager
             }
             return infos;
         }
+        /// <summary>
+        /// Récupère les informations de l'enseignant correspondant à l'id renseigné
+        /// </summary>
+        /// <param name="idEnseignant">id de l'enseignant : entier</param>
+        /// <returns>Entity.Enseignant</returns>
         public Entity.Enseignant ReadEnseignantById(int idEnseignant)
         {
             connexion.Open();
@@ -109,6 +132,11 @@ namespace TP_GIT.Manager
             }
             return data;
         }
+        /// <summary>
+        /// Supprime l'enseignant de la base de données
+        /// </summary>
+        /// <param name="idEnseignant">id de l'enseignant à supprimer: entier</param>
+        /// <returns>Booléen</returns>
         public bool DeleteEnseignant(int idEnseignant)
         {
             connexion.Open();
@@ -137,6 +165,18 @@ namespace TP_GIT.Manager
                 return false;
             }
         }
+        /// <summary>
+        /// Met à jour les informations d'un enseignant
+        /// </summary>
+        /// <param name="idEnseignant"></param>
+        /// <param name="nom"></param>
+        /// <param name="prenom"></param>
+        /// <param name="ville"></param>
+        /// <param name="cp"></param>
+        /// <param name="rue"></param>
+        /// <param name="tel"></param>
+        /// <param name="email"></param>
+        /// <returns>Booléen</returns>
         public bool updateEnseignant(int idEnseignant,string nom, string prenom, string ville ,string cp, string rue, string tel,string email)
         {
             connexion.Open();

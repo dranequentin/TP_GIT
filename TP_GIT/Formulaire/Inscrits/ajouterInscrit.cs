@@ -10,8 +10,14 @@ using System.Windows.Forms;
 
 namespace TP_GIT.Formulaire.Inscrits
 {
+    /// <summary>
+    /// Formulaire d'ajout d'un élève 
+    /// </summary>
     public partial class ajouterInscrit : Form
     {
+        /// <summary>
+        /// Constructeur du formulaire d'ajout d'un élève
+        /// </summary>
         public ajouterInscrit()
         {
             InitializeComponent();

@@ -10,8 +10,14 @@ using System.Windows.Forms;
 
 namespace TP_GIT.Formulaire.Matieres
 {
+    /// <summary>
+    /// Formulaire d'ajout d'une matière
+    /// </summary>
     public partial class ajouterMatiere : Form
     {
+        /// <summary>
+        /// Constructeur du formulaire d'ajout d'une matière
+        /// </summary>
         public ajouterMatiere()
         {
             InitializeComponent();

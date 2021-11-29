@@ -10,9 +10,14 @@ using System.Windows.Forms;
 
 namespace TP_GIT.Formulaire.Salles
 {
+    /// <summary>
+    /// Formulaire d'ajout d'une salle de classe
+    /// </summary>
     public partial class ajouterSalle : Form
     {
-        
+        /// <summary>
+        /// Constructeur du formulaire d'ajout d'une salle de classe
+        /// </summary>
         public ajouterSalle()
         {
             InitializeComponent();

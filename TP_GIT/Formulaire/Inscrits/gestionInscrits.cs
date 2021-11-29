@@ -10,10 +10,17 @@ using System.Windows.Forms;
 
 namespace TP_GIT.Formulaire.Inscrits
 {
+    /// <summary>
+    /// Formulaire de gestion des élèves
+    /// </summary>
     public partial class gestionInscrits : Form
     {
 
         List<Entity.Eleve> Eleves { get; set; }
+        /// <summary>
+        /// Constructeur du formulaire de gestion des élèves contenant la fonction permettant de lire
+        /// tous les élèves de la base de données
+        /// </summary>
         public gestionInscrits()
         {
             Manager.EleveManager eleveManager = new Manager.EleveManager();

@@ -1,0 +1,474 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TP_GIT</name>
+    </assembly>
+    <members>
+        <member name="T:TP_GIT.Entity.Classe">
+            <summary>
+            Class Classe répresente un classe du lycée
+            </summary>
+        </member>
+        <member name="T:TP_GIT.Entity.Cours">
+            <summary>
+            Class Cours représente un cours du lycée
+            </summary>
+        </member>
+        <member name="T:TP_GIT.Entity.Eleve">
+            <summary>
+            Class Eleve représente un élève du lycée 
+            </summary>
+        </member>
+        <member name="T:TP_GIT.Entity.Enseignant">
+            <summary>
+            Class Enseignant représente un enseignant du lycée
+            </summary>
+        </member>
+        <member name="T:TP_GIT.Entity.Matiere">
+            <summary>
+            Class Matiere représente une matiere enseigné au lycée
+            </summary>
+        </member>
+        <member name="T:TP_GIT.Entity.MatiereAttribuer">
+            <summary>
+            Class MatiereAttribuer représente l'association entre une matiere et un enseignant
+            </summary>
+        </member>
+        <member name="T:TP_GIT.Entity.Salle">
+            <summary>
+            Class Salle représente une salle du lycée
+            </summary>
+        </member>
+        <member name="F:TP_GIT.Formulaire.accueil.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:TP_GIT.Formulaire.accueil.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:TP_GIT.Formulaire.accueil.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:TP_GIT.Formulaire.Classes.ajouterClasse.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:TP_GIT.Formulaire.Classes.ajouterClasse.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:TP_GIT.Formulaire.Classes.ajouterClasse.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:TP_GIT.Formulaire.Classes.gestionClasses.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:TP_GIT.Formulaire.Classes.gestionClasses.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:TP_GIT.Formulaire.Classes.gestionClasses.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:TP_GIT.Formulaire.Classes.listeEleves.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:TP_GIT.Formulaire.Classes.listeEleves.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:TP_GIT.Formulaire.Classes.listeEleves.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:TP_GIT.Formulaire.Cours.ajouterCours.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:TP_GIT.Formulaire.Cours.ajouterCours.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:TP_GIT.Formulaire.Cours.ajouterCours.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:TP_GIT.Formulaire.Cours.gestionCours.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:TP_GIT.Formulaire.Cours.gestionCours.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:TP_GIT.Formulaire.Cours.gestionCours.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:TP_GIT.Formulaire.Enseignants.ajouterEnseignant.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:TP_GIT.Formulaire.Enseignants.ajouterEnseignant.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:TP_GIT.Formulaire.Enseignants.ajouterEnseignant.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:TP_GIT.Formulaire.Enseignants.ficheEnseignant.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:TP_GIT.Formulaire.Enseignants.ficheEnseignant.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:TP_GIT.Formulaire.Enseignants.ficheEnseignant.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:TP_GIT.Formulaire.Enseignants.gestionEnseignants.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:TP_GIT.Formulaire.Enseignants.gestionEnseignants.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:TP_GIT.Formulaire.Enseignants.gestionEnseignants.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:TP_GIT.Formulaire.Enseignants.updateEnseignant.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:TP_GIT.Formulaire.Enseignants.updateEnseignant.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:TP_GIT.Formulaire.Enseignants.updateEnseignant.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:TP_GIT.Formulaire.Inscrits.ajouterInscrit.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:TP_GIT.Formulaire.Inscrits.ajouterInscrit.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:TP_GIT.Formulaire.Inscrits.ajouterInscrit.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:TP_GIT.Formulaire.Inscrits.attribuerClasse.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:TP_GIT.Formulaire.Inscrits.attribuerClasse.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:TP_GIT.Formulaire.Inscrits.attribuerClasse.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:TP_GIT.Formulaire.Inscrits.ficheEleve.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:TP_GIT.Formulaire.Inscrits.ficheEleve.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:TP_GIT.Formulaire.Inscrits.ficheEleve.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:TP_GIT.Formulaire.Inscrits.gestionInscrits.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:TP_GIT.Formulaire.Inscrits.gestionInscrits.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:TP_GIT.Formulaire.Inscrits.gestionInscrits.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:TP_GIT.Formulaire.Matieres.ajouterMatiere.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:TP_GIT.Formulaire.Matieres.ajouterMatiere.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:TP_GIT.Formulaire.Matieres.ajouterMatiere.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:TP_GIT.Formulaire.Matieres.attribuerMatiere.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:TP_GIT.Formulaire.Matieres.attribuerMatiere.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:TP_GIT.Formulaire.Matieres.attribuerMatiere.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:TP_GIT.Formulaire.Matieres.gestionMatieres.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:TP_GIT.Formulaire.Matieres.gestionMatieres.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:TP_GIT.Formulaire.Matieres.gestionMatieres.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:TP_GIT.Formulaire.Matieres.updateMatiere.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:TP_GIT.Formulaire.Matieres.updateMatiere.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:TP_GIT.Formulaire.Matieres.updateMatiere.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:TP_GIT.Formulaire.Salles.ajouterSalle.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:TP_GIT.Formulaire.Salles.ajouterSalle.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:TP_GIT.Formulaire.Salles.ajouterSalle.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:TP_GIT.Formulaire.Salles.gestionSalles.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:TP_GIT.Formulaire.Salles.gestionSalles.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:TP_GIT.Formulaire.Salles.gestionSalles.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:TP_GIT.Formulaire.Salles.updateSalle.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:TP_GIT.Formulaire.Salles.updateSalle.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:TP_GIT.Formulaire.Salles.updateSalle.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:TP_GIT.Manager.ClasseManager">
+            <summary>
+            Manager de l'entity Classe
+            </summary>
+        </member>
+        <member name="M:TP_GIT.Manager.ClasseManager.ReadAllClasses(MySql.Data.MySqlClient.MySqlConnection)">
+            <summary>
+            Récupére toutes les classes de la base de données
+            </summary>
+            <param name="connexion">Connexion a la base de donnée</param>
+            <returns>List{Entity.Classe}</returns>
+        </member>
+        <member name="T:TP_GIT.Manager.MatiereManager">
+            <summary>
+            Manager de l'entité Matiere 
+            </summary>
+        </member>
+        <member name="M:TP_GIT.Manager.MatiereManager.ReadAllMatiere">
+            <summary>
+            Recupere la liste de toutes les matières
+            </summary>
+            <returns>List{Entity.Matiere}</returns>
+        </member>
+        <member name="M:TP_GIT.Manager.MatiereManager.InsertMatiere(System.String)">
+            <summary>
+            Insertion d'une matiere dans la base de donnée
+            </summary>
+            <param name="nomMatiere">nom de la matière à ajouter: chaine de charactére</param>
+            <returns>Bouléen</returns>
+        </member>
+        <member name="M:TP_GIT.Manager.MatiereManager.AttribuerMatiere(System.Int32,System.Int32)">
+            <summary>
+            Attribue une matiere a un enseignant
+            </summary>
+            <param name="idMatiere">id de la matiere a attribuer: entier</param>
+            <param name="idEnseignant">id de l'enseignant a assigner a la matière: chaine de charactère</param>
+            <returns>Bouléen</returns>
+        </member>
+        <member name="M:TP_GIT.Manager.MatiereManager.ReadMatiereById(System.Int32)">
+            <summary>
+            Lis les informations d'une matière grâce a son id
+            </summary>
+            <param name="idMatiere">id de la matière rechercher: entier</param>
+            <returns>Entity.Matier</returns>
+        </member>
+        <member name="M:TP_GIT.Manager.MatiereManager.updateMatiere(System.Int32,System.String)">
+            <summary>
+            Met à jour le nom de la matière selectionner 
+            </summary>
+            <param name="idMatiere">id de la matière selectonner: entier</param>
+            <param name="nomMatiere">nouveau nom de la matière: chaine de charactère</param>
+            <returns>Bouléen </returns>
+        </member>
+        <member name="M:TP_GIT.Program.Main">
+            <summary>
+            Point d'entrée principal de l'application.
+            </summary>
+        </member>
+        <member name="T:TP_GIT.Properties.Resources">
+            <summary>
+              Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+            </summary>
+        </member>
+        <member name="P:TP_GIT.Properties.Resources.ResourceManager">
+            <summary>
+              Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+            </summary>
+        </member>
+        <member name="P:TP_GIT.Properties.Resources.Culture">
+            <summary>
+              Remplace la propriété CurrentUICulture du thread actuel pour toutes
+              les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+            </summary>
+        </member>
+    </members>
+</doc>

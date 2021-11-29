@@ -9,6 +9,10 @@ namespace TP_GIT.Utilities
 {
     class BddUtilities
     {
+        /// <summary>
+        /// Fonction de connexion à la base de données 
+        /// </summary>
+        /// <returns>MySQLConnection</returns>
         public static MySqlConnection Connexion()
         {
             string host = "localhost"; // adresse du serveur sur lequel ouvrir la connexion

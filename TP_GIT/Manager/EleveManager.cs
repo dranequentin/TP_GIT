@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace TP_GIT.Manager
 {
+    /// <summary>
+    /// Manager de la classe Eleve
+    /// </summary>
     class EleveManager
     {
         MySqlConnection connexion;
@@ -14,7 +17,11 @@ namespace TP_GIT.Manager
         {
             connexion = Utilities.BddUtilities.Connexion();
         }
-
+        /// <summary>
+        /// Récupère tous les élèves de la base de données
+        /// </summary>
+        /// <param name="connexion"></param>
+        /// <returns>List{Entity.Eleve}</returns>
         public List<Entity.Eleve> ReadAllStudents(MySqlConnection connexion)
         {
             List<Entity.Eleve> ListEleves = new List<Entity.Eleve>();
@@ -40,7 +47,18 @@ namespace TP_GIT.Manager
             }
             return ListEleves;
         }
-
+        /// <summary>
+        /// Insertion d'un élève dans la base de données
+        /// </summary>
+        /// <param name="nom"></param>
+        /// <param name="prenom"></param>
+        /// <param name="ville"></param>
+        /// <param name="cp"></param>
+        /// <param name="rue"></param>
+        /// <param name="tel"></param>
+        /// <param name="email"></param>
+        /// <param name="dateValidation"></param>
+        /// <returns>Booléen</returns>
         public bool InsertEleve(string nom, string prenom, string ville, string cp, string rue,
            string tel, string email, DateTime dateValidation)
         {
@@ -76,7 +94,11 @@ namespace TP_GIT.Manager
             }
 
         }
-
+        /// <summary>
+        /// Récupère la liste des élèves qui ne font plus partie du lycée
+        /// </summary>
+        /// <param name="connexion"></param>
+        /// <returns>List{Entity.Eleve}</returns>
         public List<Entity.Eleve> ReadAllStillStudent(MySqlConnection connexion)
         {
             List<Entity.Eleve> ListEleves = new List<Entity.Eleve>();

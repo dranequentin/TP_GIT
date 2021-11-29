@@ -10,8 +10,14 @@ using System.Windows.Forms;
 
 namespace TP_GIT.Formulaire.Cours
 {
+    /// <summary>
+    /// Formulaire d'ajout de cours
+    /// </summary>
     public partial class ajouterCours : Form
     {
+        /// <summary>
+        /// Constructeur du formulaire d'ajout de cours
+        /// </summary>
         public ajouterCours()
         {
             InitializeComponent();

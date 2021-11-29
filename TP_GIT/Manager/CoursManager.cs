@@ -9,6 +9,9 @@ namespace TP_GIT.Manager
 {
     class CoursManager
     {
+        /// <summary>
+        /// Manager de la classe Cours
+        /// </summary>
         MySqlConnection connexion;
         public CoursManager()
         {

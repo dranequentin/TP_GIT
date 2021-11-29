@@ -10,8 +10,14 @@ using System.Windows.Forms;
 
 namespace TP_GIT.Formulaire
 {
+    /// <summary>
+    /// Formulaire d'accueil
+    /// </summary>
     public partial class accueil : Form
     {
+        /// <summary>
+        /// Constructeur du formulaire d'accueil
+        /// </summary>
         public accueil()
         {
             InitializeComponent();

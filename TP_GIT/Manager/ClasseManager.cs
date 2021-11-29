@@ -8,6 +8,9 @@ using System.Threading.Tasks;
 
 namespace TP_GIT.Manager
 {
+    /// <summary>
+    /// Manager de l'entity Classe
+    /// </summary>
     class ClasseManager
     {
         MySqlConnection connexion;
@@ -16,6 +19,11 @@ namespace TP_GIT.Manager
             connexion = Utilities.BddUtilities.Connexion();
 
         }
+        /// <summary>
+        /// Récupère toutes les classes de la base de données
+        /// </summary>
+        /// <param name="connexion">Connexion a la base de donnée</param>
+        /// <returns>List{Entity.Classe}</returns>
         public List<Entity.Classe> ReadAllClasses(MySqlConnection connexion)
         {
             List<Entity.Classe> ListClasse = new List<Entity.Classe>();
@@ -37,7 +45,11 @@ namespace TP_GIT.Manager
             }
             return ListClasse;
         }
-
+        /// <summary>
+        /// Insertion de la classe dans la base de données
+        /// </summary>
+        /// <param name="nomClasse">Nom de la nouvelle classe à ajouter: chaine de caractère</param>
+        /// <returns>Booléen</returns>
         public bool InsertClasse(string nomClasse)
         {
             connexion.Open();
@@ -50,7 +62,11 @@ namespace TP_GIT.Manager
             return true;
 
         }
-
+        /// <summary>
+        /// Récupère tous les élèves de la classe selectionnée
+        /// </summary>
+        /// <param name="idClasse">Id de la classe selectionnée : entier</param>
+        /// <returns>List{Entity.Eleve}</returns>
         public List<Entity.Eleve> ReadAllClasseById(int idClasse)
         {
             List<Entity.Eleve> listEleve = new List<Entity.Eleve>();
@@ -77,6 +93,11 @@ namespace TP_GIT.Manager
             connexion.Close();
             return listEleve;
         }
+        /// <summary>
+        /// Récupère le nom de la classe selon son id
+        /// </summary>
+        /// <param name="idClasse">Id de la classe </param>
+        /// <returns>nomClasse</returns>
         public string ReadNomClasseById(int idClasse)
         {
 

@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace TP_GIT.Entity
 {
+    /// <summary>
+    /// Class MatiereAttribuer représente l'association entre une matiere et un enseignant
+    /// </summary>
     class MatiereAttribuer
     {
         private Enseignant enseignants;

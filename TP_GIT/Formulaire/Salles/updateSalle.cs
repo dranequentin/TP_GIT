@@ -10,12 +10,22 @@ using System.Windows.Forms;
 
 namespace TP_GIT.Formulaire.Salles
 {
+    /// <summary>
+    /// Formulaire de mise à jour des salles de classes
+    /// </summary>
     public partial class updateSalle : Form
     {
         Entity.Salle salles { get; set; }
 
         private int idSalle;
+        /// <summary>
+        /// Récupère et attribue un id à l'ojet salle du formulaire
+        /// </summary>
         public int IdSalle { get => idSalle; set => idSalle = value; }
+        /// <summary>
+        /// Constructeur du fromulaire de mise a jour de la salle de classe 
+        /// </summary>
+        /// <param name="salles">Entity.Salle</param>
         public updateSalle(Entity.Salle salles)
         {
             InitializeComponent();

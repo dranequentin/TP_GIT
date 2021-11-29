@@ -10,10 +10,18 @@ using System.Windows.Forms;
 
 namespace TP_GIT.Formulaire.Classes
 {
+    /// <summary>
+    /// Formulaire de la liste des élèves
+    /// </summary>
     public partial class listeEleves : Form
     {
         List<Entity.Eleve> Eleves { get; set; }
-
+        /// <summary>
+        /// Constructeur du formulaire de la liste des élèves avec pour paramétre l'id d'une classe
+        /// et utilisant une fonction permettant de récupérer les informations de la classe
+        /// lier a l'id 
+        /// </summary>
+        /// <param name="id">id d'une classe: entier</param>
         public listeEleves(int id)
         {
             Manager.ClasseManager classeManager = new Manager.ClasseManager();

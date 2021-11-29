@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace TP_GIT.Manager
 {
+    /// <summary>
+    /// Manager de l'entitée Salle
+    /// </summary>
     class SallesManager
     {
         MySqlConnection connexion;
@@ -15,6 +18,10 @@ namespace TP_GIT.Manager
             connexion = Utilities.BddUtilities.Connexion();
 
         }
+        /// <summary>
+        /// Récupère la liste des salles de la base de données
+        /// </summary>
+        /// <returns>List{Entity.Salle}</returns>
         public List<Entity.Salle> ReadAllSalle()
         {
             connexion.Open();
@@ -38,6 +45,11 @@ namespace TP_GIT.Manager
             Utilities.BddUtilities.fermerConnexion(connexion);
             return ListSalle;
         }
+        /// <summary>
+        /// Insertion de la salle passé en paramétre dans la base de données
+        /// </summary>
+        /// <param name="nomSalle">Nom de la salle a inserer: chaine de caractère</param>
+        /// <returns>Booléen</returns>
         public bool InsertSalle(string nomSalle)
         {
             connexion.Open();
@@ -50,6 +62,12 @@ namespace TP_GIT.Manager
             return true;
 
         }
+        /// <summary>
+        /// Met à jour le nom de la salle renseigné par son id
+        /// </summary>
+        /// <param name="idSalle">id de la salle à mettre à jour: entier</param>
+        /// <param name="nomSalle">nom de la salle à mettre à jour: chaine de caractère</param>
+        /// <returns></returns>
         public bool updateSalle(int idSalle, string nomSalle)
         {
             connexion.Open();
@@ -79,6 +97,11 @@ namespace TP_GIT.Manager
                 return false;
             }
         }
+        /// <summary>
+        /// Récupère les informations d'une salle grace à son id
+        /// </summary>
+        /// <param name="idSalle">id de la salle a rechercher: entier</param>
+        /// <returns></returns>
         public Entity.Salle ReadSalleById(int idSalle)
         {
             connexion.Open();

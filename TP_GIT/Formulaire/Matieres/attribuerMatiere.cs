@@ -10,6 +10,9 @@ using System.Windows.Forms;
 
 namespace TP_GIT.Formulaire.Matieres
 {
+    /// <summary>
+    /// Formulaire d'attribution d'une matière a un enseignant
+    /// </summary>
     public partial class attribuerMatiere : Form
     {
         Entity.Enseignant enseignants { get; set; }
@@ -17,6 +20,11 @@ namespace TP_GIT.Formulaire.Matieres
         Entity.Matiere matiere { get; set; }
         List<Entity.Matiere> Matieres { get; set; }
         List<Entity.Enseignant> Enseignants { get; set; }
+        /// <summary>
+        /// Constructeur du formulaire d'attribution d'une matière à un enseignant contenant les fonctions
+        /// pour récupèrer les informations des matières et des enseignants et des boucles foreach
+        /// permettant d'attribuer les valeurs à des combobox 
+        /// </summary>
         public attribuerMatiere()
         {
             Manager.MatiereManager managerMatiere = new Manager.MatiereManager();

@@ -9,9 +9,50 @@
             Class Classe répresente un classe du lycée
             </summary>
         </member>
+        <member name="P:TP_GIT.Entity.Classe.IdClasse">
+            <summary>
+            Récupère et attribue l'id de l'objet classe 
+            </summary>
+        </member>
+        <member name="P:TP_GIT.Entity.Classe.NomClasse">
+            <summary>
+            Récupère et attribue le nom de l'objet classe 
+            </summary>
+        </member>
+        <member name="M:TP_GIT.Entity.Classe.ToString">
+            <summary>
+            Affiche le nom de la classe
+            </summary>
+            <returns>NomClasse</returns>
+        </member>
         <member name="T:TP_GIT.Entity.Cours">
             <summary>
             Class Cours représente un cours du lycée
+            </summary>
+        </member>
+        <member name="P:TP_GIT.Entity.Cours.IdCours">
+            <summary>
+            Récupère et attribue l'id de l'objet Cours 
+            </summary>
+        </member>
+        <member name="P:TP_GIT.Entity.Cours.DureeCours">
+            <summary>
+            Récupère et attribue la durée du cours de l'objet Cours 
+            </summary>
+        </member>
+        <member name="P:TP_GIT.Entity.Cours.DateCours">
+            <summary>
+            Récupère et attribue la date de l'objet Cours 
+            </summary>
+        </member>
+        <member name="P:TP_GIT.Entity.Cours.HeureCours">
+            <summary>
+            Récupère et attribue l'heure de l'objet Cours 
+            </summary>
+        </member>
+        <member name="P:TP_GIT.Entity.Cours.IsCancelled">
+            <summary>
+            Récupère et attribue l'état de l'objet Cours 
             </summary>
         </member>
         <member name="T:TP_GIT.Entity.Eleve">
@@ -24,9 +65,64 @@
             Class Enseignant représente un enseignant du lycée
             </summary>
         </member>
+        <member name="P:TP_GIT.Entity.Enseignant.IdEnseignant">
+            <summary>
+            Récupère et attribue l'id de l'objet Enseignant 
+            </summary>
+        </member>
+        <member name="P:TP_GIT.Entity.Enseignant.Nom">
+            <summary>
+            Récupère et attribue le nom de l'objet Enseignant 
+            </summary>
+        </member>
+        <member name="P:TP_GIT.Entity.Enseignant.Prenom">
+            <summary>
+            Récupère et attribue le prenom de l'objet Enseignant 
+            </summary>
+        </member>
+        <member name="P:TP_GIT.Entity.Enseignant.Cp">
+            <summary>
+            Récupère et attribue le code postale de l'objet Enseignant 
+            </summary>
+        </member>
+        <member name="P:TP_GIT.Entity.Enseignant.Ville">
+            <summary>
+            Récupère et attribue la ville de l'objet Enseignant 
+            </summary>
+        </member>
+        <member name="P:TP_GIT.Entity.Enseignant.Rue">
+            <summary>
+            Récupère et attribue le rue de l'objet Enseignant 
+            </summary>
+        </member>
+        <member name="P:TP_GIT.Entity.Enseignant.Tel">
+            <summary>
+            Récupère et attribue le numéro de téléphone de l'objet Enseignant 
+            </summary>
+        </member>
+        <member name="P:TP_GIT.Entity.Enseignant.Email">
+            <summary>
+            Récupère et attribue l'email de l'objet Enseignant 
+            </summary>
+        </member>
+        <member name="P:TP_GIT.Entity.Enseignant.DateEmbauch">
+            <summary>
+            Récupère et attribue la date d'embauche de l'objet Enseignant 
+            </summary>
+        </member>
         <member name="T:TP_GIT.Entity.Matiere">
             <summary>
             Class Matiere représente une matiere enseigné au lycée
+            </summary>
+        </member>
+        <member name="P:TP_GIT.Entity.Matiere.IdMatiere">
+            <summary>
+            Récupère et attribue l'id de l'objet Matière 
+            </summary>
+        </member>
+        <member name="P:TP_GIT.Entity.Matiere.NomMatiere">
+            <summary>
+            Récupère et attribue le nom de l'objet Matière 
             </summary>
         </member>
         <member name="T:TP_GIT.Entity.MatiereAttribuer">
@@ -37,6 +133,26 @@
         <member name="T:TP_GIT.Entity.Salle">
             <summary>
             Class Salle représente une salle du lycée
+            </summary>
+        </member>
+        <member name="P:TP_GIT.Entity.Salle.IdSalle">
+            <summary>
+            Récupère et attribue l'id de l'objet Salle 
+            </summary>
+        </member>
+        <member name="P:TP_GIT.Entity.Salle.NomSalle">
+            <summary>
+            Récupère et attribue le nom de l'objet Salle 
+            </summary>
+        </member>
+        <member name="T:TP_GIT.Formulaire.accueil">
+            <summary>
+            Formulaire d'accueil
+            </summary>
+        </member>
+        <member name="M:TP_GIT.Formulaire.accueil.#ctor">
+            <summary>
+            Constructeur du formulaire d'accueil
             </summary>
         </member>
         <member name="F:TP_GIT.Formulaire.accueil.components">
@@ -56,6 +172,16 @@
             the contents of this method with the code editor.
             </summary>
         </member>
+        <member name="T:TP_GIT.Formulaire.Classes.ajouterClasse">
+            <summary>
+            Formulaire d'ajout d'une classe
+            </summary>
+        </member>
+        <member name="M:TP_GIT.Formulaire.Classes.ajouterClasse.#ctor">
+            <summary>
+            Constructeure du formulaire d'ajout de classes
+            </summary>
+        </member>
         <member name="F:TP_GIT.Formulaire.Classes.ajouterClasse.components">
             <summary>
             Required designer variable.
@@ -71,6 +197,17 @@
             <summary>
             Required method for Designer support - do not modify
             the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:TP_GIT.Formulaire.Classes.gestionClasses">
+            <summary>
+            Formulaire de la gestion des classes
+            </summary>
+        </member>
+        <member name="M:TP_GIT.Formulaire.Classes.gestionClasses.#ctor">
+            <summary>
+            Constructeur du formulaire de gestion des classes contenant
+            une fonction pour lire toutes les classes de la base de données
             </summary>
         </member>
         <member name="F:TP_GIT.Formulaire.Classes.gestionClasses.components">
@@ -90,6 +227,19 @@
             the contents of this method with the code editor.
             </summary>
         </member>
+        <member name="T:TP_GIT.Formulaire.Classes.listeEleves">
+            <summary>
+            Formulaire de la liste des élèves
+            </summary>
+        </member>
+        <member name="M:TP_GIT.Formulaire.Classes.listeEleves.#ctor(System.Int32)">
+            <summary>
+            Constructeur du formulaire de la liste des élèves avec pour paramétre l'id d'une classe
+            et utilisant une fonction permettant de récupérer les informations de la classe
+            lier a l'id 
+            </summary>
+            <param name="id">id d'une classe: entier</param>
+        </member>
         <member name="F:TP_GIT.Formulaire.Classes.listeEleves.components">
             <summary>
             Required designer variable.
@@ -105,6 +255,16 @@
             <summary>
             Required method for Designer support - do not modify
             the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:TP_GIT.Formulaire.Cours.ajouterCours">
+            <summary>
+            Formulaire d'ajout de cours
+            </summary>
+        </member>
+        <member name="M:TP_GIT.Formulaire.Cours.ajouterCours.#ctor">
+            <summary>
+            Constructeur du formulaire d'ajout de cours
             </summary>
         </member>
         <member name="F:TP_GIT.Formulaire.Cours.ajouterCours.components">
@@ -124,6 +284,16 @@
             the contents of this method with the code editor.
             </summary>
         </member>
+        <member name="T:TP_GIT.Formulaire.Cours.gestionCours">
+            <summary>
+            formulaire de gestion des cours
+            </summary>
+        </member>
+        <member name="M:TP_GIT.Formulaire.Cours.gestionCours.#ctor">
+            <summary>
+            Constructeur du formulaire de gestion des cours
+            </summary>
+        </member>
         <member name="F:TP_GIT.Formulaire.Cours.gestionCours.components">
             <summary>
             Required designer variable.
@@ -139,6 +309,16 @@
             <summary>
             Required method for Designer support - do not modify
             the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:TP_GIT.Formulaire.Enseignants.ajouterEnseignant">
+            <summary>
+            Formulaire d'ajout d'un enseignant
+            </summary>
+        </member>
+        <member name="M:TP_GIT.Formulaire.Enseignants.ajouterEnseignant.#ctor">
+            <summary>
+            Constructeur du formulaire d'ajour d'un enseignant
             </summary>
         </member>
         <member name="F:TP_GIT.Formulaire.Enseignants.ajouterEnseignant.components">
@@ -158,6 +338,25 @@
             the contents of this method with the code editor.
             </summary>
         </member>
+        <member name="T:TP_GIT.Formulaire.Enseignants.ficheEnseignant">
+            <summary>
+            Formulaire de la fiche enseignant
+            </summary>
+        </member>
+        <member name="P:TP_GIT.Formulaire.Enseignants.ficheEnseignant.IdEnseignant">
+            <summary>
+            Récupère et attribue l'id de l'objet Enseignant passé en paramétre 
+            a l'idEnseignant du formulaire de la fiche enseignant
+            correspond a la valeur passer dans le constructeur
+            </summary>
+        </member>
+        <member name="M:TP_GIT.Formulaire.Enseignants.ficheEnseignant.#ctor(TP_GIT.Entity.Enseignant)">
+            <summary>
+            Constructeur du formulaire fiche enseignant ayant pour paramétre un objet enseignant
+            attribuant les informations de l'objet aux champs de texte du formulaire
+            </summary>
+            <param name="enseignants">Entity.Enseignant</param>
+        </member>
         <member name="F:TP_GIT.Formulaire.Enseignants.ficheEnseignant.components">
             <summary>
             Required designer variable.
@@ -173,6 +372,17 @@
             <summary>
             Required method for Designer support - do not modify
             the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:TP_GIT.Formulaire.Enseignants.gestionEnseignants">
+            <summary>
+            Formulaire de gestion des enseignants
+            </summary>
+        </member>
+        <member name="M:TP_GIT.Formulaire.Enseignants.gestionEnseignants.#ctor">
+            <summary>
+            Constructeur du formulaire de la gestion des enseignants contenant la fonction
+            permettant de lire tous les enseignants de la base de données
             </summary>
         </member>
         <member name="F:TP_GIT.Formulaire.Enseignants.gestionEnseignants.components">
@@ -192,6 +402,23 @@
             the contents of this method with the code editor.
             </summary>
         </member>
+        <member name="T:TP_GIT.Formulaire.Enseignants.updateEnseignant">
+            <summary>
+            Formulaire de modification d'un enseignant 
+            </summary>
+        </member>
+        <member name="P:TP_GIT.Formulaire.Enseignants.updateEnseignant.IdEnseignant">
+            <summary>
+            Récupère et attribue l'id de l'objet Enseignant du formulaire de mise a jour d'un enseignant
+            </summary>
+        </member>
+        <member name="M:TP_GIT.Formulaire.Enseignants.updateEnseignant.#ctor(TP_GIT.Entity.Enseignant)">
+            <summary>
+            Constucteur du formulaire de mise à jour d'un enseignant ayant comme paramétre
+            un objet enseignant
+            </summary>
+            <param name="enseignants">Entity.Enseignant</param>
+        </member>
         <member name="F:TP_GIT.Formulaire.Enseignants.updateEnseignant.components">
             <summary>
             Required designer variable.
@@ -207,6 +434,16 @@
             <summary>
             Required method for Designer support - do not modify
             the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:TP_GIT.Formulaire.Inscrits.ajouterInscrit">
+            <summary>
+            Formulaire d'ajout d'un élève 
+            </summary>
+        </member>
+        <member name="M:TP_GIT.Formulaire.Inscrits.ajouterInscrit.#ctor">
+            <summary>
+            Constructeur du formulaire d'ajout d'un élève
             </summary>
         </member>
         <member name="F:TP_GIT.Formulaire.Inscrits.ajouterInscrit.components">
@@ -226,6 +463,16 @@
             the contents of this method with the code editor.
             </summary>
         </member>
+        <member name="T:TP_GIT.Formulaire.Inscrits.attribuerClasse">
+            <summary>
+            Formulaire d'attribution d'une classe à un élève
+            </summary>
+        </member>
+        <member name="M:TP_GIT.Formulaire.Inscrits.attribuerClasse.#ctor">
+            <summary>
+            Constructeur du formulaire d'attribution de classe
+            </summary>
+        </member>
         <member name="F:TP_GIT.Formulaire.Inscrits.attribuerClasse.components">
             <summary>
             Required designer variable.
@@ -241,6 +488,16 @@
             <summary>
             Required method for Designer support - do not modify
             the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:TP_GIT.Formulaire.Inscrits.ficheEleve">
+            <summary>
+            Formulaire de la fiche élève
+            </summary>
+        </member>
+        <member name="M:TP_GIT.Formulaire.Inscrits.ficheEleve.#ctor">
+            <summary>
+            Constructeur du formulaire de la fiche élève
             </summary>
         </member>
         <member name="F:TP_GIT.Formulaire.Inscrits.ficheEleve.components">
@@ -260,6 +517,17 @@
             the contents of this method with the code editor.
             </summary>
         </member>
+        <member name="T:TP_GIT.Formulaire.Inscrits.gestionInscrits">
+            <summary>
+            Formulaire de gestion des élèves
+            </summary>
+        </member>
+        <member name="M:TP_GIT.Formulaire.Inscrits.gestionInscrits.#ctor">
+            <summary>
+            Constructeur du formulaire de gestion des élèves contenant la fonction permettant de lire
+            tous les élèves de la base de données
+            </summary>
+        </member>
         <member name="F:TP_GIT.Formulaire.Inscrits.gestionInscrits.components">
             <summary>
             Required designer variable.
@@ -275,6 +543,16 @@
             <summary>
             Required method for Designer support - do not modify
             the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:TP_GIT.Formulaire.Matieres.ajouterMatiere">
+            <summary>
+            Formulaire d'ajout d'une matière
+            </summary>
+        </member>
+        <member name="M:TP_GIT.Formulaire.Matieres.ajouterMatiere.#ctor">
+            <summary>
+            Constructeur du formulaire d'ajout d'une matière
             </summary>
         </member>
         <member name="F:TP_GIT.Formulaire.Matieres.ajouterMatiere.components">
@@ -294,6 +572,18 @@
             the contents of this method with the code editor.
             </summary>
         </member>
+        <member name="T:TP_GIT.Formulaire.Matieres.attribuerMatiere">
+            <summary>
+            Formulaire d'attribution d'une matière a un enseignant
+            </summary>
+        </member>
+        <member name="M:TP_GIT.Formulaire.Matieres.attribuerMatiere.#ctor">
+            <summary>
+            Constructeur du formulaire d'attribution d'une matière à un enseignant contenant les fonctions
+            pour récupèrer les informations des matières et des enseignants et des boucles foreach
+            permettant d'attribuer les valeurs à des combobox 
+            </summary>
+        </member>
         <member name="F:TP_GIT.Formulaire.Matieres.attribuerMatiere.components">
             <summary>
             Required designer variable.
@@ -309,6 +599,17 @@
             <summary>
             Required method for Designer support - do not modify
             the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:TP_GIT.Formulaire.Matieres.gestionMatieres">
+            <summary>
+            Formulaire de gestion des matières
+            </summary>
+        </member>
+        <member name="M:TP_GIT.Formulaire.Matieres.gestionMatieres.#ctor">
+            <summary>
+            Constructeur du formulaire de gestion des matières contenant la fonction permettant 
+            de récupèrer toutes les informations de toutes les matières
             </summary>
         </member>
         <member name="F:TP_GIT.Formulaire.Matieres.gestionMatieres.components">
@@ -328,6 +629,22 @@
             the contents of this method with the code editor.
             </summary>
         </member>
+        <member name="T:TP_GIT.Formulaire.Matieres.updateMatiere">
+            <summary>
+            Formulaire de mise à jour des matières
+            </summary>
+        </member>
+        <member name="P:TP_GIT.Formulaire.Matieres.updateMatiere.IdMatiere">
+            <summary>
+            Récupère et attribue un id a l'objet matiere de la page de mise à jour de la matière
+            </summary>
+        </member>
+        <member name="M:TP_GIT.Formulaire.Matieres.updateMatiere.#ctor(TP_GIT.Entity.Matiere)">
+            <summary>
+            Constructeur du formulaire de mise à jour des matières
+            </summary>
+            <param name="matieres">Entity.Matiere</param>
+        </member>
         <member name="F:TP_GIT.Formulaire.Matieres.updateMatiere.components">
             <summary>
             Required designer variable.
@@ -343,6 +660,16 @@
             <summary>
             Required method for Designer support - do not modify
             the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:TP_GIT.Formulaire.Salles.ajouterSalle">
+            <summary>
+            Formulaire d'ajout d'une salle de classe
+            </summary>
+        </member>
+        <member name="M:TP_GIT.Formulaire.Salles.ajouterSalle.#ctor">
+            <summary>
+            Constructeur du formulaire d'ajout d'une salle de classe
             </summary>
         </member>
         <member name="F:TP_GIT.Formulaire.Salles.ajouterSalle.components">
@@ -362,6 +689,17 @@
             the contents of this method with the code editor.
             </summary>
         </member>
+        <member name="T:TP_GIT.Formulaire.Salles.gestionSalles">
+            <summary>
+            Formulaire de gestion des salles de classe
+            </summary>
+        </member>
+        <member name="M:TP_GIT.Formulaire.Salles.gestionSalles.#ctor">
+            <summary>
+            Constructeur du formulaire de gestion des salles de classes contenant la fonction permettant
+            de récupèrer les informations de toutes les salles de classes de la base de données
+            </summary>
+        </member>
         <member name="F:TP_GIT.Formulaire.Salles.gestionSalles.components">
             <summary>
             Required designer variable.
@@ -378,6 +716,22 @@
             Required method for Designer support - do not modify
             the contents of this method with the code editor.
             </summary>
+        </member>
+        <member name="T:TP_GIT.Formulaire.Salles.updateSalle">
+            <summary>
+            Formulaire de mise à jour des salles de classes
+            </summary>
+        </member>
+        <member name="P:TP_GIT.Formulaire.Salles.updateSalle.IdSalle">
+            <summary>
+            Récupère et attribue un id à l'ojet salle du formulaire
+            </summary>
+        </member>
+        <member name="M:TP_GIT.Formulaire.Salles.updateSalle.#ctor(TP_GIT.Entity.Salle)">
+            <summary>
+            Constructeur du fromulaire de mise a jour de la salle de classe 
+            </summary>
+            <param name="salles">Entity.Salle</param>
         </member>
         <member name="F:TP_GIT.Formulaire.Salles.updateSalle.components">
             <summary>
@@ -403,10 +757,122 @@
         </member>
         <member name="M:TP_GIT.Manager.ClasseManager.ReadAllClasses(MySql.Data.MySqlClient.MySqlConnection)">
             <summary>
-            Récupére toutes les classes de la base de données
+            Récupère toutes les classes de la base de données
             </summary>
             <param name="connexion">Connexion a la base de donnée</param>
             <returns>List{Entity.Classe}</returns>
+        </member>
+        <member name="M:TP_GIT.Manager.ClasseManager.InsertClasse(System.String)">
+            <summary>
+            Insertion de la classe dans la base de données
+            </summary>
+            <param name="nomClasse">Nom de la nouvelle classe à ajouter: chaine de caractère</param>
+            <returns>Booléen</returns>
+        </member>
+        <member name="M:TP_GIT.Manager.ClasseManager.ReadAllClasseById(System.Int32)">
+            <summary>
+            Récupère tous les élèves de la classe selectionnée
+            </summary>
+            <param name="idClasse">Id de la classe selectionnée : entier</param>
+            <returns>List{Entity.Eleve}</returns>
+        </member>
+        <member name="M:TP_GIT.Manager.ClasseManager.ReadNomClasseById(System.Int32)">
+            <summary>
+            Récupère le nom de la classe selon son id
+            </summary>
+            <param name="idClasse">Id de la classe </param>
+            <returns>nomClasse</returns>
+        </member>
+        <member name="F:TP_GIT.Manager.CoursManager.connexion">
+            <summary>
+            Manager de la classe Cours
+            </summary>
+        </member>
+        <member name="T:TP_GIT.Manager.EleveManager">
+            <summary>
+            Manager de la classe Eleve
+            </summary>
+        </member>
+        <member name="M:TP_GIT.Manager.EleveManager.ReadAllStudents(MySql.Data.MySqlClient.MySqlConnection)">
+            <summary>
+            Récupère tous les élèves de la base de données
+            </summary>
+            <param name="connexion"></param>
+            <returns>List{Entity.Eleve}</returns>
+        </member>
+        <member name="M:TP_GIT.Manager.EleveManager.InsertEleve(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.DateTime)">
+            <summary>
+            Insertion d'un élève dans la base de données
+            </summary>
+            <param name="nom"></param>
+            <param name="prenom"></param>
+            <param name="ville"></param>
+            <param name="cp"></param>
+            <param name="rue"></param>
+            <param name="tel"></param>
+            <param name="email"></param>
+            <param name="dateValidation"></param>
+            <returns>Booléen</returns>
+        </member>
+        <member name="M:TP_GIT.Manager.EleveManager.ReadAllStillStudent(MySql.Data.MySqlClient.MySqlConnection)">
+            <summary>
+            Récupère la liste des élèves qui ne font plus partie du lycée
+            </summary>
+            <param name="connexion"></param>
+            <returns>List{Entity.Eleve}</returns>
+        </member>
+        <member name="F:TP_GIT.Manager.EnseignantManager.connexion">
+            <summary>
+            Manager de la classe Enseignant
+            </summary>
+        </member>
+        <member name="M:TP_GIT.Manager.EnseignantManager.InsertEnseignant(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.DateTime)">
+            <summary>
+            Insertion d'un enseignant dans la base de données
+            </summary>
+            <param name="nom"></param>
+            <param name="prenom"></param>
+            <param name="ville"></param>
+            <param name="cp"></param>
+            <param name="rue"></param>
+            <param name="tel"></param>
+            <param name="email"></param>
+            <param name="dateEmbauche"></param>
+            <returns>Booléen</returns>
+        </member>
+        <member name="M:TP_GIT.Manager.EnseignantManager.ReadAllEnseignants">
+            <summary>
+            Récupère tous les enseignants de la base de données
+            </summary>
+            <returns>List{Entity.Enseignant}</returns>
+        </member>
+        <member name="M:TP_GIT.Manager.EnseignantManager.ReadEnseignantById(System.Int32)">
+            <summary>
+            Récupère les informations de l'enseignant correspondant à l'id renseigné
+            </summary>
+            <param name="idEnseignant">id de l'enseignant : entier</param>
+            <returns>Entity.Enseignant</returns>
+        </member>
+        <member name="M:TP_GIT.Manager.EnseignantManager.DeleteEnseignant(System.Int32)">
+            <summary>
+            Supprime l'enseignant de la base de données
+            </summary>
+            <param name="idEnseignant">id de l'enseignant à supprimer: entier</param>
+            <returns>Booléen</returns>
+        </member>
+        <member name="M:TP_GIT.Manager.EnseignantManager.updateEnseignant(System.Int32,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Met à jour les informations d'un enseignant
+            </summary>
+            <param name="idEnseignant"></param>
+            <param name="nom"></param>
+            <param name="prenom"></param>
+            <param name="ville"></param>
+            <param name="cp"></param>
+            <param name="rue"></param>
+            <param name="tel"></param>
+            <param name="email"></param>
+            <returns>Booléen</returns>
         </member>
         <member name="T:TP_GIT.Manager.MatiereManager">
             <summary>
@@ -415,7 +881,7 @@
         </member>
         <member name="M:TP_GIT.Manager.MatiereManager.ReadAllMatiere">
             <summary>
-            Recupere la liste de toutes les matières
+            Recupère la liste de toutes les matières
             </summary>
             <returns>List{Entity.Matiere}</returns>
         </member>
@@ -423,20 +889,20 @@
             <summary>
             Insertion d'une matiere dans la base de donnée
             </summary>
-            <param name="nomMatiere">nom de la matière à ajouter: chaine de charactére</param>
-            <returns>Bouléen</returns>
+            <param name="nomMatiere">nom de la matière à ajouter: chaine de caractère</param>
+            <returns>Booléen</returns>
         </member>
         <member name="M:TP_GIT.Manager.MatiereManager.AttribuerMatiere(System.Int32,System.Int32)">
             <summary>
             Attribue une matiere a un enseignant
             </summary>
             <param name="idMatiere">id de la matiere a attribuer: entier</param>
-            <param name="idEnseignant">id de l'enseignant a assigner a la matière: chaine de charactère</param>
-            <returns>Bouléen</returns>
+            <param name="idEnseignant">id de l'enseignant a assigner a la matière: chaine de caractère</param>
+            <returns>Booléen</returns>
         </member>
         <member name="M:TP_GIT.Manager.MatiereManager.ReadMatiereById(System.Int32)">
             <summary>
-            Lis les informations d'une matière grâce a son id
+            Lit les informations d'une matière grâce a son id
             </summary>
             <param name="idMatiere">id de la matière rechercher: entier</param>
             <returns>Entity.Matier</returns>
@@ -446,13 +912,52 @@
             Met à jour le nom de la matière selectionner 
             </summary>
             <param name="idMatiere">id de la matière selectonner: entier</param>
-            <param name="nomMatiere">nouveau nom de la matière: chaine de charactère</param>
-            <returns>Bouléen </returns>
+            <param name="nomMatiere">nouveau nom de la matière: chaine de caractère</param>
+            <returns>Booléen </returns>
+        </member>
+        <member name="T:TP_GIT.Manager.SallesManager">
+            <summary>
+            Manager de l'entitée Salle
+            </summary>
+        </member>
+        <member name="M:TP_GIT.Manager.SallesManager.ReadAllSalle">
+            <summary>
+            Récupère la liste des salles de la base de données
+            </summary>
+            <returns>List{Entity.Salle}</returns>
+        </member>
+        <member name="M:TP_GIT.Manager.SallesManager.InsertSalle(System.String)">
+            <summary>
+            Insertion de la salle passé en paramétre dans la base de données
+            </summary>
+            <param name="nomSalle">Nom de la salle a inserer: chaine de caractère</param>
+            <returns>Booléen</returns>
+        </member>
+        <member name="M:TP_GIT.Manager.SallesManager.updateSalle(System.Int32,System.String)">
+            <summary>
+            Met à jour le nom de la salle renseigné par son id
+            </summary>
+            <param name="idSalle">id de la salle à mettre à jour: entier</param>
+            <param name="nomSalle">nom de la salle à mettre à jour: chaine de caractère</param>
+            <returns></returns>
+        </member>
+        <member name="M:TP_GIT.Manager.SallesManager.ReadSalleById(System.Int32)">
+            <summary>
+            Récupère les informations d'une salle grace à son id
+            </summary>
+            <param name="idSalle">id de la salle a rechercher: entier</param>
+            <returns></returns>
         </member>
         <member name="M:TP_GIT.Program.Main">
             <summary>
             Point d'entrée principal de l'application.
             </summary>
+        </member>
+        <member name="M:TP_GIT.Utilities.BddUtilities.Connexion">
+            <summary>
+            Fonction de connexion à la base de données 
+            </summary>
+            <returns>MySQLConnection</returns>
         </member>
         <member name="T:TP_GIT.Properties.Resources">
             <summary>
